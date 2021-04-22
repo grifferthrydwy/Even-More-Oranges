@@ -1,32 +1,38 @@
 {
   "schemaVersion": 1,
-  "id": "extraorigins",
+  "id": "even_more_origins",
   "version": "${version}",
-  "name": "Extra Origins",
-  "description": "Adds more origins to the Origins mod",
+
+  "name": "Even More Origins",
+  "description": "eeeee",
   "authors": [
-	"MoriyaShiine"
+    "SimplyCmd",
+    "MoriyaShiine"
   ],
   "contact": {
-	"homepage": "https://www.curseforge.com/minecraft/mc-mods/extra-origins",
-	"sources": "https://github.com/MoriyaShiine/extra-origins"
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
+
   "license": "GPL-3.0",
-  "icon": "assets/extraorigins/icon.png",
+  "icon": "assets/even_more_origins/icon.png",
+
   "environment": "*",
   "entrypoints": {
-	"main": [
-	  "moriyashiine.extraorigins.common.ExtraOrigins"
-	]
+    "main": [
+      "io.github.simplycmd.even_more_origins.Main"
+    ]
   },
   "mixins": [
-	"extraorigins.mixins.json"
+    "even_more_origins.mixins.json"
   ],
+
   "depends": {
-	"fabricloader": ">=0.11.0",
-	"fabric": "*",
-	"minecraft": "1.16.5",
-	"origins": ">=0.6.0",
-	"pehkui": ">=2.0.0"
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  },
+  "suggests": {
+    "another-mod": "*"
   }
 }
