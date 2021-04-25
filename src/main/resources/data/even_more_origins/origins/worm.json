@@ -1,0 +1,14 @@
+{
+  "powers": [
+    "origins:light_armor",
+    "origins:climbing",
+
+    "even_more_origins:half",
+    "even_more_origins:dirt_digger",
+    "even_more_origins:dirt_food",
+    "even_more_origins:dirt_destroy"
+  ],
+  "icon": "podzol",
+  "order": 1,
+  "impact": 3
+}

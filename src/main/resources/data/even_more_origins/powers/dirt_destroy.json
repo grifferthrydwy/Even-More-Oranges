@@ -1,0 +1,13 @@
+{
+  "type": "origins:action_on_block_break",
+  "block_action": {
+    "type": "origins:execute_command",
+    "command": "kill @e[type=item,limit=1,distance=0..1,nbt={Item:{id:\"minecraft:dirt\",Count:1b}}]"
+  },
+  "condition": {
+    "type": "origins:food_level",
+    "comparison": "<=",
+    "compare_to": 19
+  },
+  "only_when_harvested": false
+}
