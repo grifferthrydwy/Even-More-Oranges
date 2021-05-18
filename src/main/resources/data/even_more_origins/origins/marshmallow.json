@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "even_more_origins:high_jump",
+    "even_more_origins:projectile_immunity",
+    "even_more_origins:fall_immunity",
+    "even_more_origins:melt"
+  ],
+  "icon": "snow_block",
+  "order": 1,
+  "impact": 3
+}

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "origins": [
-    "even_more_origins:worm"
+    "even_more_origins:worm",
+    "even_more_origins:marshmallow"
   ]
 }

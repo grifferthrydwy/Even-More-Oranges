@@ -1,0 +1,17 @@
+{
+  "type": "origins:damage_over_time",
+  "interval": 2,
+  "onset_delay": 1,
+  "damage": 2,
+  "damage_easy": 1,
+  "damage_source": {
+    "name": "melted",
+    "unblockable": true,
+    "bypasses_armor": true
+  },
+  "protection_enchantment": "even_more_origins:ventilation",
+  "protection_effectiveness": 1000.0,
+  "condition": {
+    "type": "origins:exposed_to_sky"
+  }
+}

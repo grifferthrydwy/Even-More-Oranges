@@ -2,6 +2,6 @@
   "type": "origins:multiple",
   "modify_size": {
     "type": "even_more_origins:modify_size",
-    "scale": 0.05
+    "scale": 0.5
   }
 }
