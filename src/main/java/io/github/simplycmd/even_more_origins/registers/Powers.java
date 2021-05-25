@@ -1,20 +1,23 @@
 package io.github.simplycmd.even_more_origins.registers;
 
-import io.github.apace100.origins.power.Active;
 import io.github.apace100.origins.power.Power;
 import io.github.apace100.origins.power.PowerType;
-import io.github.apace100.origins.power.PowerTypeReference;
 import io.github.apace100.origins.power.factory.PowerFactory;
+import io.github.apace100.origins.power.factory.action.ActionFactory;
 import io.github.apace100.origins.registry.ModRegistries;
 import io.github.apace100.origins.util.SerializableData;
 import io.github.apace100.origins.util.SerializableDataType;
 import io.github.simplycmd.even_more_origins.Main;
 import io.github.simplycmd.even_more_origins.power.ModifySizePower;
 import io.github.simplycmd.even_more_origins.power.ProjectileImmunityPower;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.tag.EntityTypeTags;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Box;
 import net.minecraft.util.registry.Registry;
 
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.BiFunction;

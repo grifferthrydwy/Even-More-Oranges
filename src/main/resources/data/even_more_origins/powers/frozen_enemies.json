@@ -1,0 +1,17 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "even_more_origins:entities_in_radius",
+    "action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:speed",
+        "duration": 200000,
+        "amplifier": 5
+      }
+    },
+    "tag": "a",
+    "radius": 5
+  },
+  "interval": 20
+}

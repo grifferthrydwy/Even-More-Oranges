@@ -1,0 +1,69 @@
+{
+  "type": "origins:action_over_time",
+  "rising_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:speed",
+          "duration": 200000,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:regeneration",
+          "duration": 200000,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:strength",
+          "duration": 200000,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:resistance",
+          "duration": 200000,
+          "amplifier": 0
+        }
+      }
+    ]
+  },
+  "falling_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:speed"
+      },
+      {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:regeneration"
+      },
+      {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:strength"
+      },
+      {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:resistance"
+      }
+    ]
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:category",
+      "category": "icy"
+    }
+  }
+}

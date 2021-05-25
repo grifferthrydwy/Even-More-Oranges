@@ -1,9 +1,6 @@
 package io.github.simplycmd.even_more_origins;
 
-import io.github.simplycmd.even_more_origins.registers.Conditions;
-import io.github.simplycmd.even_more_origins.registers.Enchantments;
-import io.github.simplycmd.even_more_origins.registers.Powers;
-import io.github.simplycmd.even_more_origins.registers.ScaleTypes;
+import io.github.simplycmd.even_more_origins.registers.*;
 import net.fabricmc.api.ModInitializer;
 
 public class Main implements ModInitializer {
@@ -15,5 +12,6 @@ public class Main implements ModInitializer {
 		Powers.init();
 		Conditions.init();
 		Enchantments.init();
+		Actions.init();
 	}
 }
