@@ -1,17 +1,27 @@
 {
-  "type": "origins:action_over_time",
+  "type": "origins:active_self",
   "entity_action": {
-    "type": "even_more_origins:entities_in_radius",
-    "action": {
-      "type": "origins:apply_effect",
-      "effect": {
-        "effect": "minecraft:speed",
-        "duration": 200000,
-        "amplifier": 5
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "execute at @e[distance=0..10,type=#even_more_origins:hostile] run particle end_rod ~ ~1 ~ 0.25 0.25 0.25 0.1 10 normal",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "execute as @e[distance=0..10,type=#even_more_origins:hostile] run effect give @s minecraft:slowness 15 3 false",
+        "permission_level": 4
       }
-    },
-    "tag": "a",
-    "radius": 5
+    ]
   },
-  "interval": 20
+  "cooldown": 300,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 8
+  },
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": true
+  }
 }

@@ -1,0 +1,37 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:block_action_at",
+    "block_action": {
+      "type": "origins:set_block",
+      "block": "minecraft:snow"
+    }
+  },
+  "interval": 1,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:and",
+        "conditions": [
+          {
+            "type": "origins:command",
+            "command": "execute at @s if block ~ ~ ~ minecraft:air",
+            "comparison": "==",
+            "compare_to": 1
+          },
+          {
+            "type": "origins:on_block",
+            "block_condition": {
+              "type": "origins:movement_blocking"
+            }
+          }
+        ]
+      },
+      {
+        "type": "origins:sneaking",
+        "inverted": true
+      }
+    ]
+  }
+}

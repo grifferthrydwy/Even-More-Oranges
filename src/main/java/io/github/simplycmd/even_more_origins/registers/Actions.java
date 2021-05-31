@@ -16,26 +16,6 @@ import java.util.Map;
 
 public class Actions {
     private static final Map<ActionFactory<?>, Identifier> ACTION_FACTORIES = new LinkedHashMap<>();
-    
-    private static final ActionFactory<Entity> ENTITIES_IN_RADIUS = create(new ActionFactory<>(Origins.identifier("entities_in_radius"), new SerializableData()
-            .add("action", SerializableDataType.ENTITY_ACTION, null)
-            .add("tag", SerializableDataType.ENTITY_TAG, null)
-            .add("radius", SerializableDataType.INT, null),
-            (data, entity) -> {
-                System.out.println("test");
-                Iterator<Entity> entities = entity.world.getOtherEntities(entity, new Box(
-                        entity.getPos().x - (Integer)data.get("radius"),
-                        entity.getPos().y - (Integer)data.get("radius"),
-                        entity.getPos().z - (Integer)data.get("radius"),
-                        entity.getPos().x + (Integer)data.get("radius"),
-                        entity.getPos().y + (Integer)data.get("radius"),
-                        entity.getPos().z + (Integer)data.get("radius")
-                )).iterator();
-                while (entities.hasNext()) {
-                    Entity target_entity = entities.next();
-                    if (target_entity.getType().isIn(EntityTypeTags.SKELETONS)) ((ActionFactory<Entity>.Instance)data.get("action")).accept(target_entity);
-                }
-            }));
 
     private static ActionFactory<Entity> create(ActionFactory<Entity> actionFactory) {
         ACTION_FACTORIES.put(actionFactory, actionFactory.getSerializerId());
@@ -45,7 +25,6 @@ public class Actions {
     public static void init() {
         ACTION_FACTORIES.keySet().forEach(actionFactory -> {
             register((ActionFactory<Entity>) actionFactory);
-            System.out.println("redigisjoasd");
         });
     }
 
