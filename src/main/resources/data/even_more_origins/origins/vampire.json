@@ -1,0 +1,14 @@
+{
+  "powers": [
+    "even_more_origins:silent",
+    "even_more_origins:night_boost",
+    "even_more_origins:kill_boost",
+    "even_more_origins:burn_daylight",
+    "even_more_origins:wood_hurts",
+    "even_more_origins:arrow_hurts",
+    "even_more_origins:become_bat"
+  ],
+  "icon": "ghast_tear",
+  "order": 1,
+  "impact": 3
+}

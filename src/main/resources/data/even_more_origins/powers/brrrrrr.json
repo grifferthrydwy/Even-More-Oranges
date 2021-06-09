@@ -1,0 +1,23 @@
+{
+  "type": "origins:action_over_time",
+  "rising_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:weakness",
+      "duration": 200000,
+      "amplifier": 1
+    }
+  },
+  "falling_action": {
+    "type": "origins:clear_effect",
+    "effect": "minecraft:weakness"
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:category",
+      "category": "icy"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "origins:action_over_time",
+  "rising_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:regeneration",
+      "duration": 200000,
+      "amplifier": 0
+    }
+  },
+  "interval": 100
+}

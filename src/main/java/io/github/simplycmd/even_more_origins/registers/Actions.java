@@ -2,30 +2,32 @@ package io.github.simplycmd.even_more_origins.registers;
 
 import io.github.apace100.origins.power.factory.action.ActionFactory;
 import io.github.apace100.origins.registry.ModRegistries;
+import io.github.apace100.origins.util.SerializableData;
+import io.github.simplycmd.even_more_origins.Main;
 import net.minecraft.entity.Entity;
-import net.minecraft.tag.EntityTypeTags;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.passive.BatEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.text.LiteralText;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.Box;
 import net.minecraft.util.registry.Registry;
-import io.github.apace100.origins.Origins;
-import io.github.apace100.origins.util.*;
-
-import java.util.Iterator;
-import java.util.LinkedHashMap;
-import java.util.Map;
 
 public class Actions {
-    private static final Map<ActionFactory<?>, Identifier> ACTION_FACTORIES = new LinkedHashMap<>();
-
-    private static ActionFactory<Entity> create(ActionFactory<Entity> actionFactory) {
-        ACTION_FACTORIES.put(actionFactory, actionFactory.getSerializerId());
-        return actionFactory;
-    }
-
     public static void init() {
-        ACTION_FACTORIES.keySet().forEach(actionFactory -> {
-            register((ActionFactory<Entity>) actionFactory);
-        });
+        register(new ActionFactory<>(new Identifier(Main.MOD_ID, "become_bat"), new SerializableData(),
+                (data, entity) -> {
+                    if (entity.getEntityWorld().getDimension().hasRaids()) {
+                        //((PlayerEntity)entity).
+                        BatEntity batEntity = new BatEntity(EntityType.BAT, entity.world);
+                        batEntity.startRiding(entity);
+                        batEntity.setCustomName(new LiteralText("§4§lVampire"));
+                        entity.world.spawnEntity(batEntity);
+                        ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 600, 0, false, false, false));
+                        ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 600, -4, false, false, false));
+                    }
+                }));
     }
 
     private static void register(ActionFactory<Entity> actionFactory) {

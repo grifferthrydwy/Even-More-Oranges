@@ -13,8 +13,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(ClientPlayerEntity.class)
-public abstract class DoubleJumpMixin { // Mixin credit to https://www.curseforge.com/minecraft/mc-mods/double-jump-mod
+public abstract class ClientPlayerEntityMixin { // Mixin credit to https://www.curseforge.com/minecraft/mc-mods/double-jump-mod
     private boolean doubleJumped = false;
+    private int tick = 0;
 
     @Inject(method="tickMovement", at = @At("HEAD"))
     private void tickMovement(CallbackInfo info) {
@@ -25,6 +26,15 @@ public abstract class DoubleJumpMixin { // Mixin credit to https://www.curseforg
                 doubleJumped = true;
             }
             if (player.isOnGround()) doubleJumped = false;
+        }
+        if (((ClientPlayerEntity)(Object)this).getPassengerList().size() > 0 && ((ClientPlayerEntity)(Object)this).getPassengerList().get(0).getDisplayName().getString().equals("§4§lVampire")) {
+            if (((ClientPlayerEntity)(Object)this).getPassengerList().get(0).getDisplayName().getString().equals("§4§lVampire") && !player.isOnGround() && !player.isClimbing() && canJump(player) && player.input.jumping)
+                player.jump();
+            tick++;
+            if (tick >= 600) {
+                player.removeAllPassengers();
+                tick = 0;
+            }
         }
     }
 

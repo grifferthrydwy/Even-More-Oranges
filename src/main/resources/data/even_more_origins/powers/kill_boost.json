@@ -1,0 +1,23 @@
+{
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:heal",
+        "amount": 4.0
+      },
+      {
+        "type": "origins:feed",
+        "food": 4,
+        "saturation": 0.4
+      }
+    ]
+  },
+  "cooldown": 0,
+  "target_condition": {
+    "type": "origins:in_tag",
+    "tag": "even_more_origins:undead",
+    "inverted": true
+  }
+}

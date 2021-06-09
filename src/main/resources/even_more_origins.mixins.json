@@ -4,9 +4,14 @@
   "package": "io.github.simplycmd.even_more_origins.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "DoubleJumpMixin",
+    "ClientPlayerEntityMixin",
+    "EntityMixin",
+    "IronGolemEntityMixin",
+    "ItemMixin",
+    "MinecraftClientMixin",
     "PlayerEntityMixin",
-    "ItemMixin"
+    "SnowballEntityMixin",
+    "SnowballItemMixin"
   ],
   "client": [
   ],

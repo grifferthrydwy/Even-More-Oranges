@@ -1,0 +1,10 @@
+{
+  "powers": [
+    "even_more_origins:brewing_stand",
+    "even_more_origins:potion_ingredient",
+    "even_more_origins:golem_target"
+  ],
+  "icon": "brewing_stand",
+  "order": 1,
+  "impact": 1
+}

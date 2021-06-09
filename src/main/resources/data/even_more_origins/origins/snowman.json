@@ -3,9 +3,10 @@
     "even_more_origins:cold_buff",
     "even_more_origins:frozen_enemies",
     "even_more_origins:golem_army",
-    "even_more_origins:snow_tracking"
+    "even_more_origins:snow_tracking",
+    "even_more_origins:bro_im_melting"
   ],
-  "icon": "pumpkin",
+  "icon": "carved_pumpkin",
   "order": 1,
   "impact": 2
 }

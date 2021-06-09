@@ -1,0 +1,37 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:speed",
+          "duration": 230,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:jump_boost",
+          "duration": 230,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:night_vision",
+          "duration": 230,
+          "amplifier": 255
+        }
+      }
+    ]
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:daytime",
+    "inverted": true
+  }
+}

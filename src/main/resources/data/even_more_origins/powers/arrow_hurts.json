@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_damage_taken",
+  "damage_condition": {
+    "type": "origins:projectile",
+    "projectile": "minecraft:arrow"
+  },
+  "modifier": {
+    "name": "Weak to arrows",
+    "operation": "multiply_base",
+    "value": 2
+  }
+}

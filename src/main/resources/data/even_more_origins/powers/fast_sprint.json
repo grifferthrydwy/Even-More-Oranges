@@ -1,0 +1,19 @@
+{
+  "type": "origins:action_over_time",
+  "rising_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:speed",
+      "duration": 200000,
+      "amplifier": 1
+    }
+  },
+  "falling_action": {
+    "type": "origins:clear_effect",
+    "effect": "minecraft:speed"
+  },
+  "interval": 10,
+  "condition": {
+    "type": "origins:sprinting"
+  }
+}

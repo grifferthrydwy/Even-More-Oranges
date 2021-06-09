@@ -7,10 +7,7 @@ import io.github.apace100.origins.registry.ModRegistries;
 import io.github.apace100.origins.util.SerializableData;
 import io.github.apace100.origins.util.SerializableDataType;
 import io.github.simplycmd.even_more_origins.Main;
-import io.github.simplycmd.even_more_origins.power.DoubleJumpPower;
-import io.github.simplycmd.even_more_origins.power.ModifySizePower;
-import io.github.simplycmd.even_more_origins.power.ProjectileImmunityPower;
-import io.github.simplycmd.even_more_origins.power.SugarInhalePower;
+import io.github.simplycmd.even_more_origins.power.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -26,6 +23,10 @@ public class Powers {
     public static final PowerFactory<Power> PROJECTILE_IMMUNITY = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "projectile_immunity"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) ProjectileImmunityPower::new)).allowCondition();
     public static final PowerFactory<Power> DOUBLE_JUMP = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "double_jump"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) DoubleJumpPower::new)).allowCondition();
     public static final PowerFactory<Power> SUGAR_INHALE = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "sugar_inhale"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) SugarInhalePower::new)).allowCondition();
+    public static final PowerFactory<Power> GOLEM_TARGET = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "golem_target"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) GolemTargetPower::new)).allowCondition();
+    public static final PowerFactory<Power> LIGHTNING = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "lightning"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) LightningPower::new)).allowCondition();
+    public static final PowerFactory<Power> SILENT = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "silent"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) SilentPower::new)).allowCondition();
+    public static final PowerFactory<Power> INVISIBILITY_GLOW = create(new PowerFactory<>(new Identifier(Main.MOD_ID, "invisibility_glow"), new SerializableData(), data -> (BiFunction<PowerType<Power>, PlayerEntity, Power>) InvisibilityPower::new)).allowCondition();
 
     private static <T extends Power> PowerFactory<T> create(PowerFactory<T> factory) {
         POWER_FACTORIES.put(factory, factory.getSerializerId());
