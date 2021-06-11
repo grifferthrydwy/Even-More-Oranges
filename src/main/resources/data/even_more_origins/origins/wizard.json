@@ -1,0 +1,9 @@
+{
+    "powers": [
+        "origins:vegetarian",
+        "origins:shulker_inventory"
+    ],
+    "icon": "oak_sapling",
+    "order": 1,
+    "impact": 2
+  }

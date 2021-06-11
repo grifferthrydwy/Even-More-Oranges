@@ -1,0 +1,11 @@
+{
+    "powers": [
+        "origins:extra_reach",
+        "even_more_origins:dog_army",
+        "even_more_origins:allied_zombies",
+        "even_more_origins:weak_to_mobs"
+    ],
+    "icon": "bone",
+    "order": 1,
+    "impact": 1
+  }

@@ -1,0 +1,20 @@
+{
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:execute_command",
+        "command": "summon snow_golem ~ ~ ~ {Pumpkin:1b,CustomName:'{\"text\":\"Summoned Snow Golem\",\"color\":\"white\",\"bold\":true}'}",
+        "permission_level": 4
+    },
+    "chance": 0.1
+  },
+  "cooldown": 100,
+  "hud_render": {
+      "should_render": false
+  },
+  "target_condition": {
+    "type": "origins:entity_type",
+    "entity_type": "minecraft:zombie"
+  }
+}
