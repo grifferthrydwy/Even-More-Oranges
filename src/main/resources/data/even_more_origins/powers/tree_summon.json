@@ -1,0 +1,34 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "fill ~ ~ ~ ~ ~4 ~ oak_log replace air",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "fill ~-2 ~3 ~-2 ~2 ~3 ~2 oak_leaves replace air",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "fill ~-2 ~4 ~-2 ~2 ~4 ~2 oak_leaves replace air",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "fill ~-1 ~5 ~-1 ~1 ~5 ~1 oak_leaves replace air",
+        "permission_level": 4
+      }
+    ]
+  },
+  "cooldown": 200,
+  "hud_render": {
+    "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+    "bar_index": 17
+  },
+  "key": {"key": "key.origins.secondary_active"}
+}

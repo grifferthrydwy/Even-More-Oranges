@@ -1,7 +1,9 @@
 {
     "powers": [
         "origins:vegetarian",
-        "origins:shulker_inventory"
+        "origins:shulker_inventory",
+        "origins:claustrophobia",
+        "even_more_origins:tree_summon"
     ],
     "icon": "oak_sapling",
     "order": 1,
