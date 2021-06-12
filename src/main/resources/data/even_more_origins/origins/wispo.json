@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"wisp:permanent_invis",
+		"wisp:perma_glow",
+		"wisp:perma_resist",
+		"wisp:perma_slowfall",
+		"wisp:air_launch",
+		"wisp:perma_weakness",
+		"wisp:cancel_glow"
+	],
+	"icon": "minecraft:iron_block",
+	"order": 10,
+	"impact": 2,
+	"name": "Wisp",
+	"description": "Wisp origin"
+}

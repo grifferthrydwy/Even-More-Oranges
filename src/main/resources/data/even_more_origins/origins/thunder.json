@@ -1,0 +1,10 @@
+{
+    "powers": [
+        "even_more_origins:hammer",
+        "even_more_origins:more_exhaust",
+        "even_more_origins:weak_to_mobs"
+    ],
+    "icon": "cyan_terracotta",
+    "order": 1,
+    "impact": 1
+  }

@@ -1,0 +1,19 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "give @s trident{display:{Name:'{\"text\":\"Totally a hammer\"}',Lore:['{\"text\":\"def not a trident why would you think so?\"}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:10000s},{id:\"minecraft:loyalty\",lvl:3s},{id:\"minecraft:impaling\",lvl:5s},{id:\"minecraft:riptide\",lvl:3s},{id:\"minecraft:channeling\",lvl:1s},{id:\"minecraft:mending\",lvl:1s},{id:\"minecraft:vanishing_curse\",lvl:1s}]} 1",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "clear @s minecraft:trident 1",
+        "permission_level": 4
+      }
+    ]
+  },
+  "interval": 1000
+}

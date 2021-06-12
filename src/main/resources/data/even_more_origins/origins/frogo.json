@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"frog:perma_jump",
+		"frog:amphibious",
+		"frog:extra_reach",
+		"frog:no_falldmg",
+		"frog:less_hearts",
+		"frog:more_hunger",
+		"frog:pounce"
+	],
+	"icon": "minecraft:diamond_block",
+	"order": 10,
+	"impact": 0,
+	"name": "Frog",
+	"description": "DESCRIPTION HERE"
+}

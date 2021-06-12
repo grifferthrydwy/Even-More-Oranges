@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+	"entity_action": {
+  "type": "origins:apply_effect",
+  "effect": {
+    "effect": "minecraft:jump_boost",
+    "duration": 400,
+    "amplifier": 1,
+	"show_particles": false,
+	"show_icon": false
+	
+  }
+
+	},
+	"interval": 20
+}

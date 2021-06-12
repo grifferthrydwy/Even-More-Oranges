@@ -21,6 +21,9 @@
   "entrypoints": {
     "main": [
       "io.github.simplycmd.even_more_origins.Main"
+    ],
+    "client": [
+      "io.github.simplycmd.even_more_origins.MainClient"
     ]
   },
   "mixins": [

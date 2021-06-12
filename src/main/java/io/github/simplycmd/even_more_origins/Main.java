@@ -12,5 +12,6 @@ public class Main implements ModInitializer {
 		Conditions.init();
 		Enchantments.init();
 		Actions.init();
+		Items.init();
 	}
 }

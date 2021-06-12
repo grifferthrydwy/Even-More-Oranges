@@ -35,6 +35,7 @@ public class Powers {
         registerBlank("lightning", data -> LightningPower::new);
         registerBlank("silent", data -> SilentPower::new);
         registerBlank("invisibility_glow", data -> InvisibilityPower::new);
+        registerBlank("hammer", data -> HammerPower::new);
 
         register(new PowerFactory<>(new Identifier(Main.MOD_ID, "modify_size"),
                 new SerializableData().add("scale", SerializableDataTypes.FLOAT),
