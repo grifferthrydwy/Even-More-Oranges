@@ -1,0 +1,14 @@
+{
+  "powers": [
+    "origins:fire_immunity",
+    "origins:strong_arms",
+    "origins:more_exhaustion",
+    "origins:water_vulnerability",
+    "even_more_origins:double_health",
+    "origins:sprint_jump",
+    "origins:carnivore"
+  ],
+  "icon": "redstone",
+  "order": 1,
+  "impact": 3
+}

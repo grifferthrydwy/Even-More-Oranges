@@ -18,7 +18,7 @@
               "effect": {
                 "effect": "minecraft:speed",
                 "amplifier": 1,
-                "duration": 80
+                "duration": 100
               }
             },
             {
@@ -33,6 +33,22 @@
               "type": "origins:apply_effect",
               "effect": {
                 "effect": "minecraft:strength",
+                "amplifier": 1,
+                "duration": 100
+              }
+            },
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:resistance",
+                "amplifier": 1,
+                "duration": 100
+              }
+            },
+            {
+              "type": "origins:apply_effect",
+              "effect": {
+                "effect": "minecraft:jump_boost",
                 "amplifier": 1,
                 "duration": 100
               }

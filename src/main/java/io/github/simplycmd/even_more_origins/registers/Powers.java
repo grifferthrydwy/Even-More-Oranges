@@ -37,6 +37,9 @@ public class Powers {
         registerBlank("invisibility_glow", data -> InvisibilityPower::new);
         registerBlank("hammer", data -> HammerPower::new);
 
+        register(new PowerFactory<>(new Identifier(Main.MOD_ID, "double_health"),
+                new SerializableData(), data -> (BiFunction<PowerType<Power>, LivingEntity, Power>) DoubleHealthPower::new));
+
         register(new PowerFactory<>(new Identifier(Main.MOD_ID, "modify_size"),
                 new SerializableData().add("scale", SerializableDataTypes.FLOAT),
                 data ->

@@ -1,12 +1,12 @@
 {
 	"powers": [
-		"wisp:permanent_invis",
-		"wisp:perma_glow",
-		"wisp:perma_resist",
-		"wisp:perma_slowfall",
-		"wisp:air_launch",
-		"wisp:perma_weakness",
-		"wisp:cancel_glow"
+		"even_more_origins:permanent_invis",
+		"even_more_origins:perma_glow",
+		"even_more_origins:perma_resist",
+		"even_more_origins:perma_slowfall",
+		"even_more_origins:air_launch",
+		"even_more_origins:perma_weakness",
+		"even_more_origins:cancel_glow"
 	],
 	"icon": "minecraft:iron_block",
 	"order": 10,

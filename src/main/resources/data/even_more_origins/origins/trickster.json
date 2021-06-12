@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"trick:less_hearts",
+		"trick:tricked",
+		"trick:damage",
+		"trick:invis"
+	],
+	"icon": "minecraft:diamond_block",
+	"order": 10,
+	"impact": 0,
+	"name": "Trickster",
+	"description": "DESCRIPTION HERE"
+}

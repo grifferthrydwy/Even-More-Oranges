@@ -1,0 +1,6 @@
+{
+  "type": "origins:multiple",
+  "modify_size": {
+    "type": "even_more_origins:double_health"
+  }
+}
