@@ -4,11 +4,13 @@
 		"even_more_origins:launch",
 		"even_more_origins:fire_imune",
 		"even_more_origins:only_meat",
+		"even_more_origins:kill_boost",
 		"even_more_origins:huge_appetite",
-		"even_more_origins:water_scary",
+		"origins:water_vulnerability",
 		"even_more_origins:fall_damage",
 		"even_more_origins:light_armor",
-		"even_more_origins:nether_spawn"
+		"even_more_origins:nether_spawn",
+		"even_more_origins:invisible"
 	],
 	"icon": "minecraft:diamond_block",
 	"order": 10,

@@ -3,7 +3,9 @@
     "even_more_origins:transparent_phase",
     "origins:climbing",
     "even_more_origins:weak_against_players",
-    "even_more_origins:turn_invisible"
+    "even_more_origins:turn_invisible",
+    "even_more_origins:glow",
+    "even_more_origins:weak_invisible"
   ],
   "icon": "glass",
   "order": 1,
