@@ -1,8 +1,8 @@
 package io.github.simplycmd.even_more_origins.registers;
 
-import io.github.apace100.origins.power.factory.action.ActionFactory;
-import io.github.apace100.origins.registry.ModRegistries;
-import io.github.apace100.origins.util.SerializableData;
+import io.github.apace100.apoli.power.factory.action.ActionFactory;
+import io.github.apace100.apoli.registry.ApoliRegistries;
+import io.github.apace100.calio.data.SerializableData;
 import io.github.simplycmd.even_more_origins.Main;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -31,6 +31,6 @@ public class Actions {
     }
 
     private static void register(ActionFactory<Entity> actionFactory) {
-        Registry.register(ModRegistries.ENTITY_ACTION, actionFactory.getSerializerId(), actionFactory);
+        Registry.register(ApoliRegistries.ENTITY_ACTION, actionFactory.getSerializerId(), actionFactory);
     }
 }

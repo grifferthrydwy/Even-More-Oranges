@@ -1,6 +1,6 @@
 package io.github.simplycmd.even_more_origins.mixin;
 
-import io.github.apace100.origins.component.OriginComponent;
+import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.GolemTargetPower;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.FollowTargetGoal;
@@ -22,6 +22,6 @@ public class IronGolemEntityMixin extends GolemEntity {
     @Inject(at = @At("TAIL"), method = "initGoals")
     protected void initGoals(CallbackInfo ci) {
         this.targetSelector.add(3, new FollowTargetGoal(this, PlayerEntity.class, 5, false, false, (livingEntity) ->
-                livingEntity instanceof PlayerEntity && OriginComponent.hasPower((PlayerEntity)livingEntity, GolemTargetPower.class)));
+                livingEntity instanceof PlayerEntity && PowerHolderComponent.hasPower((PlayerEntity)livingEntity, GolemTargetPower.class)));
     }
 }

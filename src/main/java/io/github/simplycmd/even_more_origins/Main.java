@@ -8,7 +8,6 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ScaleTypes.init();
 		Powers.init();
 		Conditions.init();
 		Enchantments.init();

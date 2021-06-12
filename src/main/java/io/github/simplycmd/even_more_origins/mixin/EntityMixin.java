@@ -1,6 +1,6 @@
 package io.github.simplycmd.even_more_origins.mixin;
 
-import io.github.apace100.origins.component.OriginComponent;
+import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.SilentPower;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -14,11 +14,11 @@ import org.spongepowered.asm.mixin.Overwrite;
 public class EntityMixin {
     /**
      * @author SimplyCmd
-     * @reason a
+     * @reason Sneaking sneakers
      */
     @Overwrite
     public void playStepSound(BlockPos pos, BlockState state) {
-        if (!OriginComponent.hasPower((Entity) (Object)this, SilentPower.class) && !state.getMaterial().isLiquid()) {
+        if (!PowerHolderComponent.hasPower((Entity) (Object)this, SilentPower.class) && !state.getMaterial().isLiquid()) {
             BlockState blockState = ((Entity) (Object) this).world.getBlockState(pos.up());
             BlockSoundGroup blockSoundGroup = blockState.isOf(Blocks.SNOW) ? blockState.getSoundGroup() : state.getSoundGroup();
             ((Entity) (Object) this).playSound(blockSoundGroup.getStepSound(), blockSoundGroup.getVolume() * 0.15F, blockSoundGroup.getPitch());

@@ -1,6 +1,6 @@
 package io.github.simplycmd.even_more_origins.mixin;
 
-import io.github.apace100.origins.component.OriginComponent;
+import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.SugarInhalePower;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -21,7 +21,7 @@ public class ItemMixin {
     @Overwrite
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         ItemStack itemStack = user.getStackInHand(hand);
-        if (itemStack.getItem() == Items.SUGAR && user.getHungerManager().isNotFull() && OriginComponent.hasPower(user, SugarInhalePower.class)) {
+        if (itemStack.getItem() == Items.SUGAR && user.getHungerManager().isNotFull() && PowerHolderComponent.hasPower(user, SugarInhalePower.class)) {
             itemStack.decrement(1);
             user.getHungerManager().add(1, 1);
             return TypedActionResult.consume(itemStack);

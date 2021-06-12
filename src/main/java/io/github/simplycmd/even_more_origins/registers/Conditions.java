@@ -1,12 +1,9 @@
 package io.github.simplycmd.even_more_origins.registers;
 
-import io.github.apace100.origins.Origins;
-import io.github.apace100.origins.power.factory.condition.ConditionFactory;
-import io.github.apace100.origins.registry.ModRegistries;
-import io.github.apace100.origins.util.Comparison;
-import io.github.apace100.origins.util.SerializableData;
-import io.github.apace100.origins.util.SerializableDataType;
-import io.github.apace100.origins.util.Shape;
+
+import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
+import io.github.apace100.apoli.registry.ApoliRegistries;
+import io.github.apace100.calio.data.SerializableData;
 import io.github.simplycmd.even_more_origins.Main;
 import net.minecraft.block.pattern.CachedBlockPosition;
 import net.minecraft.entity.LivingEntity;
@@ -44,6 +41,6 @@ public class Conditions {
     }
 
     public static void init() {
-        ENTITY_CONDITIONS.keySet().forEach(condition -> Registry.register(ModRegistries.ENTITY_CONDITION, ENTITY_CONDITIONS.get(condition), condition));
+        ENTITY_CONDITIONS.keySet().forEach(condition -> Registry.register(ApoliRegistries.ENTITY_CONDITION, ENTITY_CONDITIONS.get(condition), condition));
     }
 }

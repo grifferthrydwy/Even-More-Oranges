@@ -1,6 +1,6 @@
 package io.github.simplycmd.even_more_origins.mixin;
 
-import io.github.apace100.origins.component.OriginComponent;
+import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.DoubleJumpPower;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.EquipmentSlot;
@@ -20,7 +20,7 @@ public abstract class ClientPlayerEntityMixin { // Mixin credit to https://www.c
     @Inject(method="tickMovement", at = @At("HEAD"))
     private void tickMovement(CallbackInfo info) {
         ClientPlayerEntity player = (ClientPlayerEntity) (Object) this;
-        if (OriginComponent.hasPower((ClientPlayerEntity)(Object)this, DoubleJumpPower.class)) {
+        if (PowerHolderComponent.hasPower((ClientPlayerEntity)(Object)this, DoubleJumpPower.class)) {
             if (!doubleJumped && player.getVelocity().y < 0 && !player.isOnGround() && !player.isClimbing() && canJump(player) && player.input.jumping) {
                 player.jump();
                 doubleJumped = true;
