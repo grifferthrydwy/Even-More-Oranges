@@ -16,14 +16,14 @@ public class ModifySizePower extends Power {
     @Override
     public void onAdded() {
         super.onAdded();
-        ScaleData data = ScaleData.of(entity);
-        data.setScale(ScaleData.of(entity).getInitialScale() * scale);
+        /*ScaleData data = ScaleData.of(entity);
+        data.setScale(ScaleData.of(entity).getInitialScale() * scale);*/
     }
 
     @Override
     public void onRemoved() {
         super.onRemoved();
-        ScaleData data = ScaleData.of(entity);
-        data.setScale(ScaleData.of(entity).getInitialScale() / scale);
+        /*ScaleData data = ScaleData.of(entity);
+        data.setScale(ScaleData.of(entity).getInitialScale() / scale);*/
     }
 }

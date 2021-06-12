@@ -58,10 +58,6 @@ dependencies {
 	modImplementation "com.terraformersmc:modmenu:${project.modmenu_version}"
 
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
-
-	modImplementation(include("com.github.virtuoel:pehkui:${project.pehkui_version}")) {
-		exclude(group: "net.fabricmc.fabric-api")
-	}
 }
 
 processResources {
