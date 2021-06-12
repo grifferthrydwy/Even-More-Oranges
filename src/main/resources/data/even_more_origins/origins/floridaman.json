@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"even_more_origins:more_exhaust",
+		"even_more_origins:less_hearts",
+		"even_more_origins:more_fall_damage",
+		"even_more_origins:passive_speed",
+		"even_more_origins:passive_strength",
+		"even_more_origins:cold_weak",
+		"even_more_origins:turtle_helmet"
+	],
+	"icon": "minecraft:coal_block",
+	"order": 10,
+	"impact": 0,
+	"name": "Florida Man",
+	"description": "test"
+}

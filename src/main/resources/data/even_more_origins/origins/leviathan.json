@@ -1,0 +1,18 @@
+{
+	"powers": [
+		"even_more_origins:elytra",
+		"even_more_origins:launch",
+		"even_more_origins:fire_imune",
+		"even_more_origins:only_meat",
+		"even_more_origins:huge_appetite",
+		"even_more_origins:water_scary",
+		"even_more_origins:fall_damage",
+		"even_more_origins:light_armor",
+		"even_more_origins:nether_spawn"
+	],
+	"icon": "minecraft:diamond_block",
+	"order": 10,
+	"impact": 2,
+	"name": "Leviathan",
+	"description": "test"
+}

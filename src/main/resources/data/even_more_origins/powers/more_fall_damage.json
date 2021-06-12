@@ -1,0 +1,18 @@
+{
+  "type": "origins:modify_damage_taken",
+  "modifier": {
+    "name": "More fall damage taken",
+    "value": 1,
+    "operation": "multiply_base"
+  },
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "fall"
+      }
+      
+    ]
+  }
+}

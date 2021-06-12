@@ -44,6 +44,6 @@ public class Powers {
     }
 
     public static void registerBlank(String name, Function<SerializableData.Instance, BiFunction<PowerType<Power>, LivingEntity, Power>> factory) {
-        register(new PowerFactory<>(new Identifier(Main.MOD_ID, "modify_size"), new SerializableData(), factory).allowCondition());
+        register(new PowerFactory<>(new Identifier(Main.MOD_ID, name), new SerializableData(), factory).allowCondition());
     }
 }

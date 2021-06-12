@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+	"entity_action": {
+  "type": "origins:apply_effect",
+  "effect": {
+    "effect": "minecraft:strength",
+    "duration": 400,
+    "amplifier": 0,
+	"show_particles": false,
+	"show_icon": false
+	
+  }
+
+	},
+	"interval": 20
+}
