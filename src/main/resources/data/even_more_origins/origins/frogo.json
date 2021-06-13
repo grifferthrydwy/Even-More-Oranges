@@ -4,11 +4,11 @@
 		"even_more_origins:amphibious",
 		"even_more_origins:extra_reach",
 		"even_more_origins:no_falldmg",
-		"even_more_origins:less_hearts",
+		"even_more_origins:froggy_health",
 		"even_more_origins:more_hunger",
 		"even_more_origins:pounce"
 	],
-	"icon": "minecraft:diamond_block",
+	"icon": "minecraft:lime_dye",
 	"order": 10,
 	"impact": 0,
 	"name": "Frog",

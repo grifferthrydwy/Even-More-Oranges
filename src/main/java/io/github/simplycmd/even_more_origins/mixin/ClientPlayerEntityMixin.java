@@ -4,6 +4,7 @@ import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.DoubleJumpPower;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Items;
@@ -33,6 +34,7 @@ public abstract class ClientPlayerEntityMixin { // Mixin credit to https://www.c
             tick++;
             if (tick >= 600) {
                 player.removeAllPassengers();
+                player.addStatusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 40, 255, false, false, false));
                 tick = 0;
             }
         }

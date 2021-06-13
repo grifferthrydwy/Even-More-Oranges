@@ -1,6 +1,6 @@
 {
   "type": "origins:damage_over_time",
-  "interval": 100,
+  "interval": 500,
   "onset_delay": 1,
   "damage": 2,
   "damage_easy": 1,
@@ -15,14 +15,14 @@
     "type": "origins:and",
     "conditions": [
       {
+        "type": "origins:daytime"
+      },
+      {
         "type": "origins:exposed_to_sky"
       },
       {
         "type": "origins:or",
         "conditions": [
-          {
-            "type": "origins:or",
-            "conditions": [
               {
                 "type": "origins:equipped_item",
                 "equipment_slot": "head",
@@ -42,12 +42,7 @@
                   "comparison": "==",
                   "compare_to": 1
                 }
-              }
-            ]
-          },
-          {
-            "type": "origins:or",
-            "conditions": [
+              },
               {
                 "type": "origins:equipped_item",
                 "equipment_slot": "legs",

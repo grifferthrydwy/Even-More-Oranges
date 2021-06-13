@@ -5,26 +5,31 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "summon wolf ~1 ~ ~1 {Health:2f,Owner:OhMadness,CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}'}",
+        "command": "kill @e[type=wolf,nbt={Tags:[\"sum\"]}]",
         "permission_level": 4
       },
       {
         "type": "origins:execute_command",
-        "command": "summon wolf ~-1 ~ ~1 {Health:2f,Owner:OhMadness,CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}'}",
+        "command": "summon wolf ~1 ~ ~1 {Health:1f,Owner:OhMadness,Tags:[\"sum\"],CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}',ActiveEffects:[{Id:19b,Amplifier:1b,Duration:200000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1}]}",
         "permission_level": 4
       },
       {
         "type": "origins:execute_command",
-        "command": "summon wolf ~1 ~ ~-1 {Health:2f,Owner:OhMadness,CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}'}",
+        "command": "summon wolf ~-1 ~ ~1 {Health:1f,Owner:OhMadness,Tags:[\"sum\"],CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}',ActiveEffects:[{Id:19b,Amplifier:1b,Duration:200000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1}]}",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "summon wolf ~1 ~ ~-1 {Health:1f,Owner:OhMadness,Tags:[\"sum\"],CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}',ActiveEffects:[{Id:19b,Amplifier:1b,Duration:200000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1}]}",
         "permission_level": 4          },
       {
         "type": "origins:execute_command",
-        "command": "summon wolf ~-1 ~ ~-1 {Health:2f,Owner:OhMadness,CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}'}",
+        "command": "summon wolf ~-1 ~ ~-1 {Health:1f,Owner:OhMadness,Tags:[\"sum\"],CustomName:'{\"text\":\"Summoned Wolf\",\"color\":\"dark_red\",\"bold\":true}',ActiveEffects:[{Id:19b,Amplifier:1b,Duration:200000,ShowParticles:0b}],Attributes:[{Name:generic.max_health,Base:1}]}",
         "permission_level": 4
       }
     ]
   },
-  "cooldown": 1500,
+  "cooldown": 2000,
   "hud_render": {
     "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
     "bar_index": 17

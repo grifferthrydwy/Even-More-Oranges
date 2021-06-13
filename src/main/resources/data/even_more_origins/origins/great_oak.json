@@ -1,0 +1,14 @@
+{
+  "powers": [
+    "origins:natural_armor",
+    "even_more_origins:photosynthesis",
+    "even_more_origins:nectar",
+    "even_more_origins:delicate",
+    "even_more_origins:bro_im_melting",
+    "origins:no_shield",
+    "even_more_origins:wood_kills"
+  ],
+  "icon": "oak_log",
+  "order": 1,
+  "impact": 2
+}

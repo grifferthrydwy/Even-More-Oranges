@@ -18,16 +18,14 @@ public class Actions {
     public static void init() {
         register(new ActionFactory<>(new Identifier(Main.MOD_ID, "become_bat"), new SerializableData(),
                 (data, entity) -> {
-                    if (entity.getEntityWorld().getDimension().hasRaids()) {
-                        //((PlayerEntity)entity).
                         BatEntity batEntity = new BatEntity(EntityType.BAT, entity.world);
                         batEntity.startRiding(entity);
                         batEntity.setCustomName(new LiteralText("§4§lVampire"));
                         entity.world.spawnEntity(batEntity);
                         ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.INVISIBILITY, 600, 0, false, false, false));
                         ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 600, -4, false, false, false));
-                    }
-                }));
+                })
+        );
     }
 
     private static void register(ActionFactory<Entity> actionFactory) {
