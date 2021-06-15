@@ -1,9 +1,9 @@
 {
 	"powers": [
-		"even_more_origins:froggy_health",
-		"even_more_origins:tricked",
 		"even_more_origins:damage",
-		"even_more_origins:invis"
+		"even_more_origins:invis",
+		"even_more_origins:less_hearts",
+		"even_more_origins:pesky"
 	],
 	"icon": "minecraft:diamond_block",
 	"order": 10,
