@@ -5,9 +5,9 @@
 		"even_more_origins:less_hearts",
 		"even_more_origins:pesky"
 	],
-	"icon": "minecraft:diamond_block",
+	"icon": "minecraft:big_dripleaf",
 	"order": 10,
 	"impact": 0,
 	"name": "Trickster",
-	"description": "DESCRIPTION HERE"
+	"description": "Pesky bird uwu"
 }
