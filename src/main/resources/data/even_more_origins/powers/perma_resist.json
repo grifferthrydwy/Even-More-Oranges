@@ -1,23 +1,14 @@
 {
     "type": "origins:action_over_time",
 	"entity_action": {
-  "type": "origins:apply_effect",
-  "effect": {
-    "effect": "minecraft:resistance",
-    "duration": 40,
-    "amplifier": 4,
-	"show_particles": false,
-	"show_icon": false
-	
-  }
-  },
-
-	"interval": 20,
-	"condition": {
-    "type": "origins:fluid_height",
-    "fluid": "minecraft:water",
-    "comparison": ">",
-    "compare_to": 0,
-	"inverted": true
-}
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:resistance",
+        "duration": 40,
+        "amplifier": 4,
+        "show_particles": false,
+        "show_icon": false
+      }
+    },
+	"interval": 20
 }

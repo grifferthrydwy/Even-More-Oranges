@@ -10,8 +10,6 @@ public class Main implements ModInitializer {
 	public void onInitialize() {
 		Powers.init();
 		Conditions.init();
-		Enchantments.init();
 		Actions.init();
-		Items.init();
 	}
 }

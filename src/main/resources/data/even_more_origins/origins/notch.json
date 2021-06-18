@@ -1,0 +1,13 @@
+{
+  "powers": [
+    "even_more_origins:lightning",
+    "even_more_origins:lightning_ball",
+    "origins:throw_ender_pearl",
+    "even_more_origins:only_gold",
+    "even_more_origins:float"
+  ],
+  "icon": "golden_apple",
+  "order": 1,
+  "impact": 3,
+  "name": "Notch"
+}

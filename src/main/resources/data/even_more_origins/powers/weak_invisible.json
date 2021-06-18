@@ -1,10 +1,10 @@
 {
   "type": "origins:conditioned_attribute",
   "modifier": {
+    "name": "Fragile health reduction",
     "attribute": "minecraft:generic.max_health",
-    "operation": "multiply_base",
-    "value": 0.4,
-    "name": "Weak while invisible"
+    "value": -4.0,
+    "operation": "addition"
   },
   "tick_rate": 20,
   "condition": {

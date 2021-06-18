@@ -5,13 +5,13 @@
     "command": "give @s snowball{display:{Name:'{\"text\":\"Lightning Ball\",\"color\":\"aqua\",\"bold\":true}'}} 1",
     "permission_level": 4
   },
-  "cooldown": 2000,
+  "cooldown": 5000,
   "hud_render": {
     "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
     "bar_index": 0
   },
   "key": {
-    "key": "key.origins.primary_active",
+    "key": "key.origins.secondary_active",
     "continuous": true
   }
 }

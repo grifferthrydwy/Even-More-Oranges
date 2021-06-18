@@ -11,6 +11,5 @@
 	"icon": "minecraft:iron_block",
 	"order": 10,
 	"impact": 2,
-	"name": "Wisp",
-	"description": "Wisp origin"
+	"name": "Wisp"
 }

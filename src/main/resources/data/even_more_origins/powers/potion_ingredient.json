@@ -15,7 +15,18 @@
                 "amount": 1
               }
             },
-            "chance": 0.5
+            "chance": 0.25
+          },
+          {
+            "type": "origins:chance",
+            "action": {
+              "type": "origins:give",
+              "stack": {
+                "item": "minecraft:nether_wart",
+                "amount": 1
+              }
+            },
+            "chance": 0.25
           },
           {
             "type": "origins:give",
@@ -34,6 +45,16 @@
               "type": "origins:give",
               "stack": {
                 "item": "minecraft:nether_wart",
+                "amount": 1
+              }
+            },
+            "weight": 10
+          },
+          {
+            "element": {
+              "type": "origins:give",
+              "stack": {
+                "item": "minecraft:glistering_melon_slice",
                 "amount": 1
               }
             },

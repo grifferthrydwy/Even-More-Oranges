@@ -15,6 +15,5 @@
 	"icon": "minecraft:diamond_block",
 	"order": 10,
 	"impact": 2,
-	"name": "Leviathan",
-	"description": "test"
+	"name": "Leviathan"
 }

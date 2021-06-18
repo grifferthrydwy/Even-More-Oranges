@@ -12,5 +12,6 @@
   ],
   "icon": "snow_block",
   "order": 1,
-  "impact": 2
+  "impact": 2,
+  "name": "Marshmallow"
 }

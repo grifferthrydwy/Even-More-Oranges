@@ -3,7 +3,8 @@
 		"even_more_origins:damage",
 		"even_more_origins:invis",
 		"even_more_origins:less_hearts",
-		"even_more_origins:pesky"
+		"even_more_origins:pesky",
+		"origins:climbing"
 	],
 	"icon": "minecraft:big_dripleaf",
 	"order": 10,

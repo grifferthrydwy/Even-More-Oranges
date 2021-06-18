@@ -6,5 +6,6 @@
     ],
     "icon": "cyan_terracotta",
     "order": 1,
-    "impact": 1
-  }
+    "impact": 1,
+    "name": "Thunder"
+}

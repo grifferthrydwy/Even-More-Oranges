@@ -1,9 +1,7 @@
 {
     "type": "origins:active_self",
     "entity_action": {
-          "type": "origins:execute_command",
-          "command": "summon parrot ~ ~ ~ {CustomName:'{\"text\":\"Pesky Bird\",\"italic\":true}'}",
-          "permission_level": 4
+      "type": "even_more_origins:flip"
     },
     "cooldown": 2000,
     "hud_render": {

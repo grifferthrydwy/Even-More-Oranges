@@ -9,6 +9,7 @@
     "origins:carnivore"
   ],
   "icon": "redstone",
-  "order": 1,
-  "impact": 3
+  "order": 0,
+  "impact": 3,
+  "name": "Cave Golem"
 }

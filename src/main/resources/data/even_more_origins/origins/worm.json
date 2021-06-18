@@ -10,5 +10,6 @@
   ],
   "icon": "podzol",
   "order": 1,
-  "impact": 3
+  "impact": 3,
+  "name": "Worm"
 }

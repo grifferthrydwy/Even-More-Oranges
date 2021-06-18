@@ -11,6 +11,5 @@
 	"icon": "minecraft:lime_dye",
 	"order": 10,
 	"impact": 0,
-	"name": "Frog",
-	"description": "DESCRIPTION HERE"
+	"name": "Frog"
 }

@@ -9,5 +9,6 @@
   ],
   "icon": "carved_pumpkin",
   "order": 1,
-  "impact": 2
+  "impact": 2,
+  "name": "Snowman"
 }
