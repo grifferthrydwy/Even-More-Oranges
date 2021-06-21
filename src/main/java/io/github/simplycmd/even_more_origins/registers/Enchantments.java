@@ -3,7 +3,6 @@ package io.github.simplycmd.even_more_origins.registers;
 import io.github.simplycmd.even_more_origins.VentilationEnchantment;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 

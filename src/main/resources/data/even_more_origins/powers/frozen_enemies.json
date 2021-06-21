@@ -5,12 +5,12 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "execute at @e[distance=0..10,type=#even_more_origins:hostile] run particle end_rod ~ ~1 ~ 0.25 0.25 0.25 0.1 10 normal",
+        "command": "execute at @e[distance=1..10,type=#even_more_origins:hostile] run particle end_rod ~ ~1 ~ 0.25 0.25 0.25 0.1 10 normal",
         "permission_level": 4
       },
       {
         "type": "origins:execute_command",
-        "command": "execute as @e[distance=0..10,type=#even_more_origins:hostile] run effect give @s minecraft:slowness 15 3 false",
+        "command": "execute as @e[distance=1..10,type=#even_more_origins:hostile] run effect give @s minecraft:slowness 15 3 false",
         "permission_level": 4
       }
     ]

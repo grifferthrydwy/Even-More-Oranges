@@ -7,7 +7,6 @@
     "EntityMixin",
     "IronGolemEntityMixin",
     "ItemMixin",
-    "PlayerEntityMixin",
     "LivingEntityMixin",
     "SnowballEntityMixin",
     "SnowballItemMixin"
