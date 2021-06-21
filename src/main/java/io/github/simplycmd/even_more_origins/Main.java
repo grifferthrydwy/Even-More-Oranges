@@ -11,5 +11,6 @@ public class Main implements ModInitializer {
 		Powers.init();
 		Conditions.init();
 		Actions.init();
+		Enchantments.init();
 	}
 }
