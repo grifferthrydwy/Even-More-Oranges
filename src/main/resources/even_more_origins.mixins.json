@@ -7,13 +7,13 @@
     "EntityMixin",
     "IronGolemEntityMixin",
     "ItemMixin",
-    "MinecraftClientMixin",
     "PlayerEntityMixin",
     "LivingEntityMixin",
     "SnowballEntityMixin",
     "SnowballItemMixin"
   ],
   "client": [
+    "MinecraftClientMixin"
   ],
   "injectors": {
     "defaultRequire": 1
