@@ -60,8 +60,6 @@ dependencies {
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 
 	modImplementation(include("com.github.simplycmd:origins-fabric:${project.origins_version}"))
-
-	modImplementation(include("com.github.virtuoel:pehkui:${project.pehkui_version}"))
 }
 
 processResources {
