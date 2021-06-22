@@ -14,7 +14,7 @@ public class Enchantments {
     }
 
     private static Enchantment register(String path, Enchantment enchantment) {
-        Registry.register(Registry.ENCHANTMENT, new Identifier("even_more_origins", path), enchantment);
+        //Registry.register(Registry.ENCHANTMENT, new Identifier("even_more_origins", path), enchantment);
         return enchantment;
     }
 }
