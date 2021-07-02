@@ -13,6 +13,7 @@ import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
@@ -20,6 +21,8 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
+    @Shadow public abstract void endCombat();
+
     private boolean doubleJumped = false;
     private int tick = 0;
 
@@ -31,17 +34,25 @@ public abstract class LivingEntityMixin {
                 entity.setOnGround(true);
                 doubleJumped = true;
             }
-            if (entity.world.getBlockState(entity.getBlockPos().add(0, -1, 0)).isAir()) {
-                if (!entity.world.getBlockState(entity.getBlockPos().add(0, -2, 0)).isAir()) {
-                    doubleJumped = false;
-                }
-            } else {
-                doubleJumped = false;
-            }
+
+            // this is extremely concerning
+            if (entity.world.getBlockState(entity.getBlockPos().add(0, -1, 0)).isAir())
+                if (entity.world.getBlockState(entity.getBlockPos().add(1, -1, 0)).isAir())
+                    if (entity.world.getBlockState(entity.getBlockPos().add(-1, -1, 0)).isAir())
+                        if (entity.world.getBlockState(entity.getBlockPos().add(1, -1, 1)).isAir())
+                            if (entity.world.getBlockState(entity.getBlockPos().add(-1, -1, 1)).isAir())
+                                if (entity.world.getBlockState(entity.getBlockPos().add(1, -1, -1)).isAir())
+                                    if (!entity.world.getBlockState(entity.getBlockPos().add(-1, -1, -1)).isAir()) doubleJumped = false;
+                                else doubleJumped = false;
+                            else doubleJumped = false;
+                        else doubleJumped = false;
+                    else doubleJumped = false;
+                else doubleJumped = false;
+            else doubleJumped = false;
         }
         if (entity.getPassengerList().size() > 0 && entity.getPassengerList().get(0).getDisplayName().getString().equals("§4§lVampire")) {
             entity.setOnGround(true);
-            entity.addVelocity(entity.getRotationVector().getX() / 2, 0, entity.getRotationVector().getZ() / 2);
+            entity.addVelocity(entity.getRotationVector().getX() / 4, 0, entity.getRotationVector().getZ() / 4);
             tick++;
             if (tick >= 600) {
                 entity.removeAllPassengers();

@@ -6,7 +6,8 @@
     "even_more_origins:burn_daylight",
     "even_more_origins:wood_hurts",
     "even_more_origins:arrow_hurts",
-    "even_more_origins:become_bat"
+    "even_more_origins:become_bat",
+    "even_more_origins:1.5_scale_thin"
   ],
   "icon": "ghast_tear",
   "order": 1,

@@ -1,9 +1,9 @@
 {
   "powers": [
     "origins:light_armor",
-    "origins:climbing",
+    "even_more_origins:basic_climbing",
 
-    "even_more_origins:half",
+    "even_more_origins:0.5_scale",
     "even_more_origins:dirt_digger",
     "even_more_origins:dirt_food",
     "even_more_origins:dirt_destroy"

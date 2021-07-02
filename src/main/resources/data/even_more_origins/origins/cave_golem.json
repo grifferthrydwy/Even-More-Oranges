@@ -6,7 +6,8 @@
     "origins:water_vulnerability",
     "even_more_origins:double_health",
     "origins:sprint_jump",
-    "origins:carnivore"
+    "origins:carnivore",
+    "even_more_origins:1.5_scale"
   ],
   "icon": "redstone",
   "order": 0,

@@ -4,7 +4,8 @@
 		"even_more_origins:invis",
 		"even_more_origins:less_hearts",
 		"even_more_origins:pesky",
-		"origins:climbing"
+		"even_more_origins:basic_climbing",
+		"even_more_origins:0.9_scale"
 	],
 	"icon": "minecraft:big_dripleaf",
 	"order": 10,

@@ -1,11 +1,12 @@
 {
   "powers": [
     "even_more_origins:transparent_phase",
-    "origins:climbing",
+    "even_more_origins:basic_climbing",
     "even_more_origins:weak_against_players",
     "even_more_origins:turn_invisible",
     "even_more_origins:glow",
-    "even_more_origins:weak_invisible"
+    "even_more_origins:weak_invisible",
+    "even_more_origins:0.75_scale"
   ],
   "icon": "glass",
   "order": 1,

@@ -6,7 +6,9 @@
     "even_more_origins:delicate",
     "even_more_origins:bro_im_melting",
     "origins:no_shield",
-    "even_more_origins:wood_kills"
+    "even_more_origins:wood_kills",
+    "even_more_origins:grow_flower",
+    "even_more_origins:1.3_height"
   ],
   "icon": "oak_log",
   "order": 1,

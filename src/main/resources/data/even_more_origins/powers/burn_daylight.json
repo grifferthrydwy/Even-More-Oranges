@@ -1,7 +1,15 @@
 {
-  "type": "origins:burn",
+  "type": "origins:damage_over_time",
   "interval": 20,
-  "burn_duration": 1,
+  "onset_delay": 1,
+  "damage": 2,
+  "damage_easy": 1,
+  "damage_source": {
+    "name": "exposed",
+    "unblockable": true,
+    "bypasses_armor": true
+  },
+  "protection_effectiveness": 1.0,
   "condition": {
     "type": "origins:and",
     "conditions": [

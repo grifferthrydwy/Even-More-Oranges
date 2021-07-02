@@ -29,8 +29,7 @@
         ]
       },
       {
-        "type": "origins:sneaking",
-        "inverted": true
+        "type": "origins:sneaking"
       }
     ]
   }
