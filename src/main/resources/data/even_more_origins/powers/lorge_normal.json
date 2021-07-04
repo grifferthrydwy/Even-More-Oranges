@@ -1,0 +1,14 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:execute_command",
+    "command": "scale set pehkui:base 3",
+    "permission_level": 4
+  },
+  "interval": 2,
+  "condition": {
+    "type": "origins:power_active",
+    "power": "even_more_origins:lorge_toggle",
+    "inverted": true
+  }
+}

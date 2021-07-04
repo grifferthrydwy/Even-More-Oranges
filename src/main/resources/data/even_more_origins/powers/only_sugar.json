@@ -1,9 +1,18 @@
 {
   "type": "origins:prevent_item_use",
   "item_condition": {
-    "type": "origins:ingredient",
-    "ingredient": {
-      "tag": "even_more_origins:non_sugars"
-    }
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "even_more_origins:sugars"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
   }
 }

@@ -5,12 +5,12 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "scale set pehkui:height 0.75 @s",
+        "command": "scale set pehkui:height 0.70 @s",
         "permission_level": 4
       },
       {
         "type": "origins:execute_command",
-        "command": "scale set pehkui:width 0.75 @s",
+        "command": "scale set pehkui:width 0.70 @s",
         "permission_level": 4
       }
     ]
@@ -20,12 +20,12 @@
     "actions": [
       {
         "type": "origins:execute_command",
-        "command": "scale set pehkui:height 0.75 @s",
+        "command": "scale set pehkui:height 0.70 @s",
         "permission_level": 4
       },
       {
         "type": "origins:execute_command",
-        "command": "scale set pehkui:width 0.75 @s",
+        "command": "scale set pehkui:width 0.70 @s",
         "permission_level": 4
       }
     ]

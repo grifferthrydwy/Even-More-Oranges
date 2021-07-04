@@ -3,6 +3,9 @@ package io.github.simplycmd.even_more_origins.mixin;
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.DoubleJumpPower;
 import io.github.simplycmd.even_more_origins.power.ProjectileImmunityPower;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
@@ -12,6 +15,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.ElytraItem;
 import net.minecraft.item.Items;
 import net.minecraft.server.network.ServerPlayerEntity;
+import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
@@ -21,34 +25,35 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
-    @Shadow public abstract void endCombat();
+    @Shadow protected abstract void fall(double heightDifference, boolean onGround, BlockState landedState, BlockPos landedPosition);
 
-    private boolean doubleJumped = false;
+    private boolean jumped = false;
+    private boolean falling = false;
     private int tick = 0;
 
     @Inject(method="tickMovement", at = @At("HEAD"))
     private void updateInput(CallbackInfo ci) {
         LivingEntity entity = (LivingEntity) (Object) this;
-        if (PowerHolderComponent.hasPower((LivingEntity)(Object)this, DoubleJumpPower.class)) {
-            if (!doubleJumped && entity.getVelocity().y < 0) {
-                entity.setOnGround(true);
-                doubleJumped = true;
+        if (PowerHolderComponent.hasPower(entity, DoubleJumpPower.class)) {
+            // Set falling
+            if (entity.getVelocity().y < 0) {
+                if (!entity.verticalCollision) {
+                    if (!jumped) falling = true;
+                } else {
+                    falling = false;
+                    jumped = false;
+                }
             }
 
-            // this is extremely concerning
-            if (entity.world.getBlockState(entity.getBlockPos().add(0, -1, 0)).isAir())
-                if (entity.world.getBlockState(entity.getBlockPos().add(1, -1, 0)).isAir())
-                    if (entity.world.getBlockState(entity.getBlockPos().add(-1, -1, 0)).isAir())
-                        if (entity.world.getBlockState(entity.getBlockPos().add(1, -1, 1)).isAir())
-                            if (entity.world.getBlockState(entity.getBlockPos().add(-1, -1, 1)).isAir())
-                                if (entity.world.getBlockState(entity.getBlockPos().add(1, -1, -1)).isAir())
-                                    if (!entity.world.getBlockState(entity.getBlockPos().add(-1, -1, -1)).isAir()) doubleJumped = false;
-                                else doubleJumped = false;
-                            else doubleJumped = false;
-                        else doubleJumped = false;
-                    else doubleJumped = false;
-                else doubleJumped = false;
-            else doubleJumped = false;
+            // Detect double jump
+            if (entity.getVelocity().y > 0 && falling) {
+                jumped = true;
+            }
+
+            // Allow double jump
+            else if (entity.getVelocity().y < 0 && falling && !jumped) {
+                entity.setOnGround(true);
+            }
         }
         if (entity.getPassengerList().size() > 0 && entity.getPassengerList().get(0).getDisplayName().getString().equals("§4§lVampire")) {
             entity.setOnGround(true);

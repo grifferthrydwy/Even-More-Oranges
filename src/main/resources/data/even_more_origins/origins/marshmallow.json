@@ -8,7 +8,10 @@
     "even_more_origins:double_jump",
     "even_more_origins:only_sugar",
     "even_more_origins:sugar_inhale",
-    "even_more_origins:slightly_big"
+    "even_more_origins:slightly_big",
+    "even_more_origins:lorge_toggle",
+    "even_more_origins:lorge",
+    "even_more_origins:lorge_normal"
   ],
   "icon": "snow_block",
   "order": 1,
