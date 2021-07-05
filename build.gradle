@@ -59,7 +59,7 @@ dependencies {
 
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 
-	modImplementation(include("com.github.simplycmd:origins-fabric:${project.origins_version}"))
+	modImplementation(include("com.github.apace100:origins-fabric:${project.origins_version}"))
 }
 
 processResources {
