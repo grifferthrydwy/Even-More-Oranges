@@ -1,0 +1,15 @@
+{
+  "type": "origins:prevent_item_use",
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "even_more_origins:no_ranged"
+        },
+        "inverted": false
+      },
+    ]
+  }
+}
