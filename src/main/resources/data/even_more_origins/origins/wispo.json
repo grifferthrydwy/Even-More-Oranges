@@ -1,13 +1,10 @@
 {
 	"powers": [
-		"even_more_origins:permanent_invis",
-		"even_more_origins:perma_glow",
 		"even_more_origins:perma_resist",
 		"even_more_origins:perma_slowfall",
 		"even_more_origins:air_launch",
 		"even_more_origins:perma_weakness",
-		"even_more_origins:cancel_glow",
-		"even_more_origins:0.5_height"
+		"even_more_origins:0.5_scale"
 	],
 	"icon": "minecraft:iron_block",
 	"order": 10,
