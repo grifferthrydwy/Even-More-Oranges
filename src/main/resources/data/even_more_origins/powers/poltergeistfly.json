@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "fly": {
+      "type": "origins:swimming",
+      "condition": {
+        "type":"origins:and",
+        "conditions": [
+          {
+            "type": "origins:fluid_height",
+              "fluid": "minecraft:water",
+              "comparison": ">",
+              "compare_to": 0.0,
+              "inverted": true
+          },
+          {
+            "type": "origins:power_active",
+            "power": "origins:phantomize_poltergeist",
+            "inverted": false
+          }
+        ]
+      }
+    },
+    "name": "Spirit",
+    "description": "Being a ghost, you can fly and move through blocks."
+  }
