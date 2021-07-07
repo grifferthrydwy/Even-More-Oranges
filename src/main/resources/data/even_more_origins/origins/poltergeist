@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"even_more_origins:phasing_poltergeist",
+		"even_more_origins:no_ranged_combat",
+		"even_more_origins:slightlytranslucent",
+		"even_more_origins:phantomize_poltergeist",
+		"even_more_origins:no_equipment",
+		"even_more_origins:betterimmunity",
+		"even_more_origins:cleanerweakness",
+		"even_more_origins:0.5_scale"
+	],
+	"icon": "minecraft:yellow_stained_glass_pane",
+	"order": 11,
+	"impact": 2,
+	"name": "Geist"
+}
