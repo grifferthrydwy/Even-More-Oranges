@@ -1,0 +1,14 @@
+{
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "inverted": true,
+    "type": "origins:or",
+}
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "dryout"
+      }
+    ]
+  }
+}
