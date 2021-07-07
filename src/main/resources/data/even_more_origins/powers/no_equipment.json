@@ -2,22 +2,22 @@
   "type": "origins:restrict_armor",
   "head": {
     "type": "origins:armor_value",
-    "comparison": "<",
-    "compare_to": 9999
+    "comparison": ">",
+    "compare_to": 0
   },
   "chest": {
     "type": "origins:armor_value",
-    "comparison": "<",
-    "compare_to": 9999
+    "comparison": ">",
+    "compare_to": 0
   },
   "legs": {
     "type": "origins:armor_value",
-    "comparison": "<",
-    "compare_to": 9999
+    "comparison": ">",
+    "compare_to": 0
   },
   "feet": {
     "type": "origins:armor_value",
-    "comparison": "<",
-    "compare_to": 9999
+    "comparison": ">",
+    "compare_to": 0
   }
 }
