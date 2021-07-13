@@ -14,7 +14,7 @@
 		"even_more_origins:1.5_scale"
 	],
 	"icon": "minecraft:diamond_block",
-	"order": 10,
+	"order": 4,
 	"impact": 2,
 	"name": "Leviathan"
 }

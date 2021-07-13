@@ -3,12 +3,12 @@
 	"entity_action": {
     "type": "origins:apply_effect",
     "effect": {
-      "effect": "minecraft:strength",
-      "duration": 400,
+      "effect": "minecraft:mining_fatigue",
+      "duration": 1000,
       "amplifier": 0,
       "show_particles": false,
       "show_icon": false
     }
 	},
-	"interval": 20
+	"interval": 500
 }

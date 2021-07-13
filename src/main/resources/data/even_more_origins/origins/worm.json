@@ -9,7 +9,7 @@
     "even_more_origins:dirt_destroy"
   ],
   "icon": "podzol",
-  "order": 1,
+  "order": 15,
   "impact": 3,
   "name": "Worm"
 }

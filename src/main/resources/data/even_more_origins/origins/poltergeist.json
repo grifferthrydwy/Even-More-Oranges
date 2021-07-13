@@ -7,10 +7,14 @@
 		"even_more_origins:no_equipment",
 		"even_more_origins:betterimmunity",
 		"even_more_origins:cleanerweakness",
-		"even_more_origins:0.5_scale"
+		"even_more_origins:become_geist",
+		"even_more_origins:0.8_reach",
+		"even_more_origins:flap",
+		"even_more_origins:0.5_scale",
+		"even_more_origins:perma_fatigue"
 	],
 	"icon": "minecraft:yellow_stained_glass_pane",
-	"order": 11,
+	"order": 7,
 	"impact": 2,
 	"name": "Geist"
 }

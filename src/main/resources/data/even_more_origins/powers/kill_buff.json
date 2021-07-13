@@ -1,0 +1,25 @@
+{
+  "type": "origins:self_action_on_kill",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration": 100
+        }
+      },
+      {    
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:regeneration",
+          "amplifier": 0,
+          "duration": 100
+        }
+      }
+    ]
+  },
+  "cooldown": 10
+}
