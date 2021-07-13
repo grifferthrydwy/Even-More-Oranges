@@ -3,18 +3,13 @@ package io.github.simplycmd.even_more_origins.mixin;
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.simplycmd.even_more_origins.power.DoubleJumpPower;
 import io.github.simplycmd.even_more_origins.power.ProjectileImmunityPower;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
+import io.github.simplycmd.even_more_origins.power.FlapPower;
+import io.github.simplycmd.even_more_origins.power.LifeLeachPower;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
-import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.ElytraItem;
-import net.minecraft.item.Items;
-import net.minecraft.server.network.ServerPlayerEntity;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -66,10 +61,19 @@ public abstract class LivingEntityMixin {
                 tick = 0;
             }
         }
+        if (PowerHolderComponent.hasPower(entity, FlapPower.class) && entity.getStatusEffect(StatusEffects.LUCK) != null)
+            entity.setOnGround(true);
     }
 
     @Inject(at = @At("HEAD"), method = "damage", cancellable = true)
     public void damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
         if (PowerHolderComponent.hasPower((LivingEntity)(Object)this, ProjectileImmunityPower.class) && source.isProjectile()) cir.setReturnValue(false);
+    }
+
+    @Inject(method = "damage", at = @At("RETURN"))
+    private void invokeHitActions(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
+        if(cir.getReturnValue()) {
+            PowerHolderComponent.getPowers(source.getAttacker(), LifeLeachPower.class).forEach(p -> p.onHit((LivingEntity)(Object)this, source, amount));
+        }
     }
 }
