@@ -1,0 +1,15 @@
+{
+  "powers": [
+    "even_more_origins:fly_daylight",
+    "even_more_origins:extra_life",
+    "even_more_origins:perma_glow",
+    "origins:light_armor",
+    "origins:natural_armor",
+    "origins:vegetarian",
+    "origins:more_kinetic_damage"
+  ],
+  "icon": "golden_apple",
+  "order": 16,
+  "impact": 3,
+  "name": "Angel"
+}

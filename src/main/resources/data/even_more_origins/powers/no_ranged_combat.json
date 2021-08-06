@@ -9,6 +9,12 @@
           "tag": "even_more_origins:no_ranged"
         },
         "inverted": false
+      },
+      {
+        "type": "origins:enchantment",
+        "enchantment": "minecraft:riptide",
+        "comparison": "<=",
+        "compare_to": 0
       }
     ]
   }

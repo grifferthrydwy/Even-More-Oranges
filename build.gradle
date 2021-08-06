@@ -12,7 +12,7 @@ group = project.maven_group
 
 repositories {
 	maven {
-		name = "Ladysnake Libs"
+		name = 'Ladysnake Mods'
 		url = 'https://ladysnake.jfrog.io/artifactory/mods'
 	}
 	maven {
@@ -28,38 +28,37 @@ repositories {
 		}
 	}
 	maven {
-		url "https://jitpack.io"
-	}
-	maven {
 		url "https://maven.shedaniel.me/"
-	}
-	maven {
-		url "https://maven.terraformersmc.com/"
 	}
 }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modImplementation "com.github.apace100:apoli:${project.apoli_version}"
-	include "com.github.apace100:apoli:${project.apoli_version}"
+	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${project.cca_version}"
+	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-base:${project.cca_version}"
+
+	modImplementation "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${project.cca_version}"
+	include "io.github.onyxstudios.Cardinal-Components-API:cardinal-components-entity:${project.cca_version}"
+
+	modImplementation "net.adriantodt.fabricmc:fallflyinglib:${project.ffl_version}"
+	include "net.adriantodt.fabricmc:fallflyinglib:${project.ffl_version}"
 
 	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
 	include "me.shedaniel.cloth:cloth-config-fabric:${project.clothconfig_version}"
 
-	modImplementation(include("com.terraformersmc:modmenu:${project.modmenu_version}"))
-
 	include modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.reach_version}")
 
-	modImplementation(include("com.github.apace100:origins-fabric:${project.origins_version}"))
+	modImplementation "io.github.ladysnake:PlayerAbilityLib:${pal_version}"
+	include "io.github.ladysnake:PlayerAbilityLib:${pal_version}"
+
+	implementation include(fileTree(dir: 'libs', include: '*.jar'))
 }
 
 processResources {

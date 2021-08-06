@@ -1,0 +1,9 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Ethereal strength",
+    "attribute": "minecraft:generic.max_health",
+    "value": 8.0,
+    "operation": "addition"
+  }
+}
