@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"even_more_origins:perma_jump",
+		"even_more_origins:amphibious",
+		"even_more_origins:extra_reach",
+		"even_more_origins:no_falldmg",
+		"even_more_origins:froggy_health",
+		"even_more_origins:fire_immune",
+		"even_more_origins:0.65_scale"
+	],
+	"icon": "minecraft:warped_fungus",
+	"order": 1,
+	"impact": 0,
+	"name": "Warper"
+}
