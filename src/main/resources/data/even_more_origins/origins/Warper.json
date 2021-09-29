@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"even_more_origins:fire_immune",
+		"even_more_origins:fire_immune",
+		"even_more_origins:fire_immune",
+		"even_more_origins:fire_immune",
+		"even_more_origins:fire_immune",
+		"even_more_origins:0.65_scale",
+		"even_more_origins:fire_immune"
+	],
+	"icon": "minecraft:warped_fungus",
+	"order": 1,
+	"impact": 0,
+	"name": "Warper"
+}
