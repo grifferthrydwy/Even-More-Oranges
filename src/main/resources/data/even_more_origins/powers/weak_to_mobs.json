@@ -7,5 +7,8 @@
       "name": "Weak to mobs",
       "operation": "multiply_base",
       "value": 1.5
-  }
+  },
+
+"name":"Weak to mobs",
+"description":"It's literally in the name dude.. you're weak when fighting mobs"
 }

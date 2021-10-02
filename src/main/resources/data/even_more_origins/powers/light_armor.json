@@ -19,5 +19,7 @@
     "type": "origins:armor_value",
     "comparison": ">",
     "compare_to": 1
-  }
+  },
+  "name":"Light Armor",
+  "description":"Your odd body shape prevents you from wearing armor"
 }

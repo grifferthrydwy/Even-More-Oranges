@@ -5,5 +5,8 @@
     "attribute": "minecraft:generic.max_health",
     "value": -8.0,
     "operation": "addition"
-  }
+  },
+
+   "name":"Weak frog health",
+   "description":"Its been scientifically proven that frogs have less minecraft health points than humans, I hope you have good insurance"
 }

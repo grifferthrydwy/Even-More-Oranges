@@ -65,5 +65,9 @@
       "type": "origins:category",
       "category": "icy"
     }
-  }
+  },
+
+    "name":"This is fine",
+	"description":"Cold is fine, cold is good"
+
 }

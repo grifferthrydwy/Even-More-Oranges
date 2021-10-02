@@ -11,5 +11,6 @@
   "icon": "carved_pumpkin",
   "order": 8,
   "impact": 2,
-  "name": "Snowman"
+  "name": "Snowman",
+  "description":"You are a snow man, therefore you are stronger in cold biomes and weaker in hot ones or when near fox, he do be handsome"
 }

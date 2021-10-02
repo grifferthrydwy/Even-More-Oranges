@@ -11,5 +11,7 @@
         "type": "origins:food"
       }
     ]
-  }
+  },
+  "name": "Carnivore",
+  "description": "Leviathan teeth are not made to eat vegetables, and therefore you are NOT ALLOWED to do it >:("
 }

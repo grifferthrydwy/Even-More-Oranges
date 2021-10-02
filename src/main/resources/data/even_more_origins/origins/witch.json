@@ -8,5 +8,6 @@
   "icon": "brewing_stand",
   "order": 13,
   "impact": 1,
-  "name": "Witch"
+  "name": "Witch",
+  "description":"You is a witch, deal with it"
 }

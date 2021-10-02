@@ -3,5 +3,8 @@
   "modify_size": {
     "type": "even_more_origins:modify_size",
     "scale": 0.9
-  }
+  },
+
+   "name":"Slightly bigger",
+   "description":"Really...Really.. are you seriously reading this..."
 }

@@ -2,8 +2,12 @@
   "type": "origins:attribute",
   "modifier": {
     "name": "Ethereal strength",
+	"description":"Calling on your divine powers, you gain an extra 4 hearts",
     "attribute": "minecraft:generic.max_health",
     "value": 8.0,
     "operation": "addition"
-  }
+  },
+
+  "name":"Ethereal Strength",
+  "description":"You gain an extra 4 hearts"
 }

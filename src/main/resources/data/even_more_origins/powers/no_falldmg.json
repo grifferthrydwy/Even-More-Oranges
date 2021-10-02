@@ -3,5 +3,7 @@
   "damage_condition": {
     "type": "origins:name",
     "name": "fall"
-  }
+  },
+  "name":"No fall damage",
+  "description":"Why are you reading this... Isn't it obvious?"
 }

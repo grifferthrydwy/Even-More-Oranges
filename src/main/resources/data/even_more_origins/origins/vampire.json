@@ -12,5 +12,6 @@
   "icon": "ghast_tear",
   "order": 11,
   "impact": 3,
-  "name": "Vampire"
+  "name": "Vampire",
+  "description":"You are a blood thirsty vampire"
 }

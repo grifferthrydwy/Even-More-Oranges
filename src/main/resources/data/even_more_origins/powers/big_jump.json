@@ -10,5 +10,8 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+
+    "name":"Big jump",
+	"description":"ITS A BIG JUMP WHY ARE YOU READING THIS MALO"
 }

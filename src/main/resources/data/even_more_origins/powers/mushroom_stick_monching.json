@@ -1,0 +1,41 @@
+{
+  "type": "origins:action_on_item_use",
+  "item_action": {
+    "type": "origins:consume",
+    "amount": 1
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:feed",
+        "food": 1.0,
+        "saturation": 1.0
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:speed",
+          "amplifier": 0,
+          "duration": 200
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:haste",
+          "amplifier": 0,
+          "duration": 200
+        }
+      }
+    ]
+  },
+  "item_condition": {
+    "type": "origins:ingredient",
+    "ingredient": {
+      "item": "minecraft:warped_fungus_on_a_stick"
+    }
+  },
+   "name": "Strider Stomach",
+   "description": "You quite enjoy warped mushrooms, and they give you a nice buff when you eat one off of a stick."
+},

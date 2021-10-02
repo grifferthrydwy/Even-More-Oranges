@@ -9,5 +9,7 @@
     "type": "origins:block",
     "block": "minecraft:dirt"
   },
-  "only_when_harvested": false
+  "only_when_harvested": false,
+  "name":"Scrumptious Dirt",
+  "description":"You can eat dirt..I don't personally think it tastes good but you can do it."
 }

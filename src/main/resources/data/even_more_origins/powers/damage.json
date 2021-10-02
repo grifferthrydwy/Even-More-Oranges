@@ -28,6 +28,12 @@
         "name": "Weak to enchanted items",
         "operation": "addition",
         "value": 5.5
-    }
+    },
+
+
+"name": "Weak to enchanted items",
+"description":"Seriously who needs a description for this? ITS LITERALLY IN THE NAME"
+
+
 }
 					

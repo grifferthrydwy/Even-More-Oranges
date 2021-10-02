@@ -47,5 +47,10 @@
       "type": "origins:status_effect",
       "effect": "minecraft:invisibility"
     }
-  }
+  },
+
+
+"name":"Epic prank bro",
+"description":"You turn invisible and blind the players around you"
+
 }

@@ -7,5 +7,7 @@
   "modifier": {
     "operation": "multiply_base",
     "value": 100
-  }
+  },
+"name":"Gold Digger...Oops i mean Dirt Digger",
+"description":"You break dirt fast"
 }

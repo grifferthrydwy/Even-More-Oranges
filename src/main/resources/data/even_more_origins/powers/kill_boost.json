@@ -19,5 +19,10 @@
     "type": "origins:in_tag",
     "tag": "even_more_origins:undead",
     "inverted": true
-  }
+  },
+
+"name":"Blood Thirst",
+"description":"After killing an enemy you drink their blood, regaining a bunch of health and hunger."
+
+
 }

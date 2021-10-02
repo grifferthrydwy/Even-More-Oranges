@@ -12,5 +12,9 @@
   }
 
 	},
-	"interval": 20
+	"interval": 20,
+
+   "name":"Permanent Jump Boost",
+   "description":"Really?! Really?! why are you reading this dude.. look at the name again."
+
 }

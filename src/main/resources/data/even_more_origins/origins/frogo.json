@@ -2,14 +2,15 @@
 	"powers": [
 		"even_more_origins:perma_jump",
 		"even_more_origins:amphibious",
-		"even_more_origins:extra_reach",
 		"even_more_origins:no_falldmg",
+		"even_more_origins:weak_against_mobs",
 		"even_more_origins:froggy_health",
 		"even_more_origins:pounce",
 		"even_more_origins:0.65_scale"
 	],
 	"icon": "minecraft:lime_dye",
 	"order": 1,
-	"impact": 0,
-	"name": "Frog"
+	"impact": 3,
+	"name": "Frog",
+	"description":"Pepe the frog?"
 }

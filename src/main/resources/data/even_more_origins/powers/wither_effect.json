@@ -1,0 +1,31 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:wither",
+        "amplifier": 0,
+        "duration": 100
+      }
+    },
+    "damage_condition":  {
+      "type": "origins:attacker",
+      "entity_condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "item": "minecraft:stone_sword"
+          }
+        }
+      }
+    },
+    "cooldown": 60,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 5
+    },
+    "name": "Wither Away",
+    "description": "On hit, your opponents start Withering away, they get Wither for 5 seconds."
+}

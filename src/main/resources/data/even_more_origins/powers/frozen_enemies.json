@@ -23,5 +23,9 @@
   "key": {
     "key": "key.origins.secondary_active",
     "continuous": true
-  }
+  },
+
+    "name":"Freeze!",
+	"description":"Pressing your secondary active key you can freeze the enemies around you..hopefully"
+
 }

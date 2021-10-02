@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"even_more_origins:wither_effect",
+		"even_more_origins:no_wither",
+		"even_more_origins:no_fire",
+		"even_more_origins:sword",
+		"even_more_origins:calcium",
+		"even_more_origins:prevent_better_sword"
+	],
+	"icon": "minecraft:wither_skeleton_skull",
+	"order": 10,
+	"impact": 2,
+	"name": "Witherling",
+	"description": "Haha wither effect goes brrrrrrrr"
+}

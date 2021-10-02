@@ -4,7 +4,7 @@
     "type": "origins:chance",
     "action": {
       "type": "origins:execute_command",
-        "command": "summon snow_golem ~ ~ ~ {Pumpkin:1b,CustomName:'{\"text\":\"Summoned Snow Golem\",\"color\":\"white\",\"bold\":true}'}",
+        "command": "summon snow_golem ~ ~ ~ {Pumpkin:1b,CustomName:'{\"text\":\"Allied Zombie\",\"color\":\"lime\",\"bold\":true}'}",
         "permission_level": 4
     },
     "chance": 0.1
@@ -16,5 +16,7 @@
   "target_condition": {
     "type": "origins:entity_type",
     "entity_type": "minecraft:zombie"
-  }
+  },
+  "name": "Zombie Alliance",
+  "description": "Every zombie you kill has a chance to become allied with you!"
 }

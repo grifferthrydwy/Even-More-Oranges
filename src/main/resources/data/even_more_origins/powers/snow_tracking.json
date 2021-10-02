@@ -32,5 +32,9 @@
         "type": "origins:sneaking"
       }
     ]
-  }
+  },
+
+    "name":"Snow tracking",
+	"description":"You track snow.. Yea.. that's it.. you track snow around"
+
 }

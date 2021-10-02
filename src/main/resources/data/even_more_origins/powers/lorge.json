@@ -9,5 +9,8 @@
   "condition": {
     "type": "origins:power_active",
     "power": "even_more_origins:lorge_toggle"
-  }
+  },
+
+   "name":"Lardex, Destroyer of Buffets",
+   "description":"YOU GET BIGGER, GALAXY SIZED"
 }

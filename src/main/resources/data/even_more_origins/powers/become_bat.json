@@ -11,5 +11,8 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+
+"name": "Bat Transformation",
+"description":"You turn into a bat...duh"
 }

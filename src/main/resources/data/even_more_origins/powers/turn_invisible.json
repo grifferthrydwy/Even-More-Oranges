@@ -13,5 +13,7 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+  "name": "Apparition",
+  "description": "You can turn invisible on command and all nearby players are highlighted, but you are much weaker"
 }

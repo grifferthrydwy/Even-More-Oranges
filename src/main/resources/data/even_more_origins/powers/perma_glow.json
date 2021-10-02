@@ -14,5 +14,8 @@
     "condition": {
       "type": "origins:sneaking",
       "inverted": true
-    }
+    },
+
+    "name":"Permanent Glow",
+	"description":"Really?! Really?! Description??, Why are you reading this dude.. It's literally called Permanent Glow, what more information do you need?"
 }

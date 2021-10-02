@@ -2,5 +2,8 @@
   "type": "origins:multiple",
   "modify_size": {
     "type": "even_more_origins:double_health"
-  }
+  },
+
+  "name":"Double Health",
+  "description":"Really?! Really?! Why are you reading this, what more information do you need?! Read the name."
 }

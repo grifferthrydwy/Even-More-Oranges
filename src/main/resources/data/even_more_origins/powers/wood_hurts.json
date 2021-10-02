@@ -17,5 +17,11 @@
     "name": "Weak to wooden tools",
     "operation": "multiply_base",
     "value": 4
-  }
+  },
+
+
+"name":"Ouch that's a splinter",
+"description":"It's been scientifically proven that vampires are weak to wooden tools so you take more damage from them"
+
+
 }

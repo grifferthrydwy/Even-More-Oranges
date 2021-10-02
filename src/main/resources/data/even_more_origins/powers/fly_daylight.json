@@ -10,5 +10,8 @@
         "type": "origins:exposed_to_sky"
       }
     ]
-  }
+  },
+      "name":"Angelic Flight",
+	  "description":"Blah Blah Blah.. Angel.. Blah Blah.. you can fly during daytime while exposed to the sky"
+
 }

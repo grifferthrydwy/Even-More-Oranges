@@ -8,5 +8,7 @@
     "name": "Less damage to players",
     "operation": "multiply_base",
     "value": 0.2
-  }
+  },
+  "name": "Slushy form",
+  "description": "Your body is nearly gas, so attacks to humans do less damage"
 }

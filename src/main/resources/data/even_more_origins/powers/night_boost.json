@@ -33,5 +33,10 @@
   "condition": {
     "type": "origins:daytime",
     "inverted": true
-  }
+  },
+
+
+"name":"Night time!",
+"description":"After burning for 12 minutes during the day its finally night-time again. You get bonus speeed,night vision,and jump boost..Too bad someone will instantly sleep through the night"
+
 }

@@ -1,0 +1,28 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:apply_effect",
+    "effect": {
+      "effect": "minecraft:slowness",
+      "duration": 10,
+      "amplifier": 1
+    }
+  },
+  "interval": 5,
+  "condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:fluid_height",
+        "fluid": "minecraft:water",
+        "comparison": ">",
+        "compare_to": 0.0
+      },
+      {
+        "type": "origins:in_rain"
+      }
+    ]
+  },
+  "name": "Warm ender-body",
+  "description": "While your enderman traits are very minimal, you still have the likeness of a strider, and combined your bodily processes slow down when wet."
+}

@@ -1,0 +1,25 @@
+{
+  "type": "origins:modify_damage_taken",
+  "modifier": {
+    "name": "More kinetic damage taken",
+    "value": 0.5,
+    "operation": "multiply_base"
+  },
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "fall"
+      },
+      {
+        "type": "origins:name",
+        "name": "flyIntoWall"
+      }
+    ]
+  },
+  
+  
+  "name":"Weak bones",
+  "description":"Bruh your bones are soo weak and you will take more kinetic damage, drink some milk bruh you need calcium"
+}

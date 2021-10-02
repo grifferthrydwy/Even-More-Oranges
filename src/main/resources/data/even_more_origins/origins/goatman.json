@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"even_more_origins:wowee_big_jump",
+		"even_more_origins:ram",
+		"even_more_origins:fur_buff",
+		"even_more_origins:fur_buff2",
+		"even_more_origins:bro_its_hot"
+	],
+	"icon": "map",
+	"order": 10,
+	"impact": 2,
+	"name": "Goat Man",
+	"description": "You are a goat, man"
+}

@@ -9,5 +9,6 @@
   "tick_rate": 20,
   "condition": {
     "type": "origins:invisible"
-  }
+  },
+  "hidden": true
 }

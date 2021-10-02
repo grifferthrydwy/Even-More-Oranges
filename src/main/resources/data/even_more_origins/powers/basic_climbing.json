@@ -24,5 +24,10 @@
   },
   "condition": {
     "type": "origins:collided_horizontally"
-  }
+  },
+
+"name":"Basic climbing",
+"description":"You can climb up stuff..Duh"
+
+
 }

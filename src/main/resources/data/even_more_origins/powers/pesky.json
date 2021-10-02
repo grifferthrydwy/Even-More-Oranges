@@ -11,5 +11,9 @@
     "key": {
       "key": "key.origins.secondary_active",
       "continuous": true
-    }
+    },
+
+"name":"Pesky birds!",
+"description":"Pressing your secondary key you can spawn a parrot.. don't tell fox about it..He might get jealous"
+
 }

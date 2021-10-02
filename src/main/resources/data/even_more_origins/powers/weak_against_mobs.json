@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "modifier": {
+    "name": "Less damage to mobs",
+    "operation": "multiply_base",
+    "value": 0.75
+  },
+  "name": "Squishy boi",
+  "description": "How's a boneless frog arm expected to do significant damage to anything?"
+}

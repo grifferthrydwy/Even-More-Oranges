@@ -14,5 +14,8 @@
     "name": "Strong with wooden tools",
     "operation": "multiply_base",
     "value": 4
-  }
+  },
+
+      "name": "Strong with wooden tools",
+	  "description":"The title says it all"
 }

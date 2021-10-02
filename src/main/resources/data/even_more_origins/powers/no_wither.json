@@ -1,0 +1,6 @@
+{
+    "type": "origins:effect_immunity",
+    "effect": "minecraft:wither",
+    "name": "Witherian",
+    "description": "You can't get affected by the wither and fire effect."
+}

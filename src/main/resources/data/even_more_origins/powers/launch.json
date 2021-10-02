@@ -10,5 +10,7 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+  "name": "Lurch",
+  "description": "You can use your powerful wings to boost forward"
 }

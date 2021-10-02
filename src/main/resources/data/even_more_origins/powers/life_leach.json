@@ -1,4 +1,6 @@
 {
   "type": "even_more_origins:life_leach",
-  "strength": 0.2
+  "strength": 0.2,
+  "name": "Life Leach",
+  "description": "Attacc -> heal"
 }

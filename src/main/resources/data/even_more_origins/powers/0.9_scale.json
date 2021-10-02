@@ -45,5 +45,6 @@
       }
     ]
   },
-  "execute_chosen_when_orb": true
+  "execute_chosen_when_orb": true,
+  "hidden":true
 }

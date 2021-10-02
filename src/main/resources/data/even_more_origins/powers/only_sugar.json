@@ -14,5 +14,9 @@
         "type": "origins:food"
       }
     ]
-  }
+  },
+
+     "name":"Sweet Sweet type 2 diabetes",
+	 "description":"You can only eat sugar"
+
 }

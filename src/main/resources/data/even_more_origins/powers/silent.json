@@ -1,3 +1,5 @@
 {
-  "type": "even_more_origins:silent"
+  "type": "even_more_origins:silent",
+  "name":"Silent",
+  "description":"Did you hear something moving around us?"
 }

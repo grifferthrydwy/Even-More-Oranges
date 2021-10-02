@@ -11,5 +11,10 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+
+
+    "name":"Flowers for everyone!",
+	"description":"You get a flower, and you get a flower, everyone gets a flower! exept malo tho"
+
 }

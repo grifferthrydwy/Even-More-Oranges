@@ -1,3 +1,5 @@
 {
-  "type": "even_more_origins:projectile_immunity"
+  "type": "even_more_origins:projectile_immunity",
+  "name":"Projectile Immunity",
+  "description":"Its literally in the name dude, you're imune to projectiles.. duh"
 }

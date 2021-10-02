@@ -8,5 +8,9 @@
     "name": "Weak to arrows",
     "operation": "multiply_base",
     "value": 2
-  }
+  },
+
+"name": "Weak to arrows",
+"description":"It's been scientifically proven that vampires are weak to arrows"
+
 }

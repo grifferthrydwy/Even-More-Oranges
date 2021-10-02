@@ -1,0 +1,50 @@
+{
+  "type": "origins:action_over_time",
+  "rising_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:speed",
+          "duration": 200000,
+          "amplifier": 0
+        }
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:regeneration",
+          "duration": 200000,
+          "amplifier": 0
+        }
+      }
+    
+    ]
+  },
+  "falling_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:speed"
+      },
+      {
+        "type": "origins:clear_effect",
+        "effect": "minecraft:regeneration"
+      }
+    ]
+  },
+  "interval": 20,
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:category",
+      "category": "extreme_hills"
+    }
+  },
+
+    "name":"No place like home",
+	"description":"You gain a bunch of buffs while in mountain biomes."
+
+}

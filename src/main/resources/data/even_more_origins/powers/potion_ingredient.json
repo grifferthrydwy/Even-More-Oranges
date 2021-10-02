@@ -222,5 +222,9 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+
+"name":"Potion ingredient",
+"description":"WOAH,Where did that come from part2, electric boogaloo."
+
 }

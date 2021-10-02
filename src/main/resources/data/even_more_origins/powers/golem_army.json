@@ -32,5 +32,10 @@
   "key": {
     "key": "key.origins.primary_active",
     "continuous": true
-  }
+  },
+
+    "name":"Go my clidren!",
+	"description":"Summon a bunch of snowmen to help you in a fight"
+
+
 }

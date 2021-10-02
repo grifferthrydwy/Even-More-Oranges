@@ -11,5 +11,7 @@
     "key": {
       "key": "key.origins.primary_active",
       "continuous": true
-    }
+    },
+    "name": "Time Warp",
+    "description": "You slow down time enough to dodge an attack and easily get to safety"
   }

@@ -21,5 +21,7 @@
       }
     ]
   },
-  "cooldown": 10
+  "cooldown": 10,
+  "name": "Godly Adrenaline",
+  "description": "When you make a kill, you heal and get faster"
 }

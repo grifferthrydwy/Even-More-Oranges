@@ -9,5 +9,6 @@
     "comparison": "<=",
     "compare_to": 19
   },
-  "only_when_harvested": false
+  "only_when_harvested": false,
+  "hidden":true
 }

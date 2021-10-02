@@ -34,5 +34,7 @@
     "type": "origins:health",
     "comparison": "<",
     "compare_to": 6
-  }
+  },
+  "name": "Enraged Weakness",
+  "description": "Your fight or flight kicks in when near death, and you become stronger."
 }

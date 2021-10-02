@@ -14,5 +14,9 @@
   "key": {
     "key": "key.origins.secondary_active",
     "continuous": true
-  }
+  },
+
+"name":"Brewing Stand",
+"description":"WOAH,Where did that come from?"
+
 }

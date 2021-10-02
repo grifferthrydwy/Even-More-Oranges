@@ -12,5 +12,6 @@
   "icon": "redstone",
   "order": 0,
   "impact": 3,
-  "name": "Cave Golem"
+  "name": "Cave Golem",
+  "description":"Stronk man"
 }

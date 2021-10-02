@@ -6,5 +6,7 @@
   "block_condition": {
     "type": "origins:in_tag",
     "tag": "even_more_origins:transparent_phasable"
-  }
+  },
+  "name": "Ghostlike",
+  "description": "You can walk through doors and windows"
 }

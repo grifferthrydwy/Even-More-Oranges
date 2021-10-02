@@ -11,5 +11,6 @@
   "icon": "glass",
   "order": 12,
   "impact": 1,
-  "name": "Whoosh"
+  "name": "Whoosh",
+  "description":"You just got wooshed"
 }

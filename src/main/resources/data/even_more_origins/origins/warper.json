@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"even_more_origins:fire_imune",
+		"origins:throw_ender_pearl",
+		"even_more_origins:more_hunger",
+		"even_more_origins:nether_spawn",
+		"even_more_origins:water_kinda_slow",
+		"even_more_origins:mushroom_stick_monching"
+	],
+	"icon": "minecraft:warped_fungus_on_a_stick",
+	"order": 10,
+	"impact": 3,
+	"name": "Warper",
+	"description": "One time you ate a sugon shroom and you've never been the same since"
+}

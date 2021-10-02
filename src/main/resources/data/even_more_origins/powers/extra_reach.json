@@ -13,5 +13,8 @@
       "value": 1.5,
       "operation": "addition"
     }
-  ]
+  ],
+
+    "name":"Extra Reach",
+	"description":"....Read the name."
 }

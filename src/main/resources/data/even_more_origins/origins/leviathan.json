@@ -10,11 +10,11 @@
 		"even_more_origins:fall_damage",
 		"even_more_origins:light_armor",
 		"even_more_origins:nether_spawn",
-		"even_more_origins:invisible",
 		"even_more_origins:1.5_scale"
 	],
 	"icon": "minecraft:diamond_block",
 	"order": 4,
 	"impact": 2,
-	"name": "Leviathan"
+	"name": "Leviathan",
+	"description":"rar"
 }

@@ -1,0 +1,15 @@
+{
+    "type": "origins:action_on_callback",
+    "entity_action_chosen": {
+	"type": "origins:execute_command",
+        "command": "give @s minecraft:stone_sword{display:{Name:'[{\"text\":\"Wither Sword\"}]'},Enchantments:[{id:vanishing_curse,lvl:1}],Unbreakable:1b}"
+    },
+    "entity_action_respawned": {
+        "type": "origins:execute_command",
+        "command": "give @s minecraft:stone_sword{display:{Name:'[{\"text\":\"Wither Sword\"}]'},Enchantments:[{id:vanishing_curse,lvl:1}],Unbreakable:1b}"
+    },
+    "execute_chosen_when_orb": true,
+    "hidden": false,
+    "name": "Wither Sword",
+    "description": "You spawn with an unbreakable stone sword"
+}
