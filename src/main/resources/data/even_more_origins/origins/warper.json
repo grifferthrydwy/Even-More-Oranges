@@ -1,13 +1,12 @@
 {
 	"powers": [
 		"even_more_origins:fire_imune",
-		"origins:throw_ender_pearl",
-		"even_more_origins:more_hunger",
+		"origins:warper_chorus",
 		"even_more_origins:nether_spawn",
 		"even_more_origins:water_kinda_slow",
 		"even_more_origins:mushroom_stick_monching"
 	],
-	"icon": "minecraft:warped_fungus_on_a_stick",
+	"icon": "minecraft:warped_fungus",
 	"order": 10,
 	"impact": 3,
 	"name": "Warper",
