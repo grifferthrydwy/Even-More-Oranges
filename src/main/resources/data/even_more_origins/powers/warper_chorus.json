@@ -1,0 +1,17 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "even_more_origins:chorus"
+    },
+    "cooldown": 10,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+      "bar_index": 17
+    },
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": true
+    },
+    "name": "Warp",
+    "description": "You warp the fabric of space and appear elsewhere nearby."
+  }
