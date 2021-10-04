@@ -1,0 +1,10 @@
+{
+    "type:elytra_flight",
+    "render_elytra": true,
+    "texture_location": "LOCATION THAT NEEDS TO BE CREATED"
+    "condition": {
+      "type": "origins_power_active",
+      "power": "*:flameborn_toggle"
+  }
+}
+    
