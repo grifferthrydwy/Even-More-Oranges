@@ -4,10 +4,41 @@
     "type": "origins:and",
     "conditions": [
       {
-        "type": "origins:daytime"
+        "type": "origins:or",
+        "conditions": [
+          {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:daytime"
+              },
+              {
+                "type": "origins:exposed_to_sky"
+              }
+            ]
+          },
+          {
+            "type": "origins:and",
+            "conditions": [
+              {
+                "type": "origins:dimension",
+                "dimension": "minecraft:the_nether"
+              },
+              {
+                "type": "origins:in_block",
+                "block_condition": {
+                  "type": "origins:height",
+                  "comparison": ">",
+                  "compare_to": 126
+                }
+              }
+            ]
+          }
+        ]
       },
       {
-        "type": "origins:exposed_to_sky"
+        "type": "origins:power_active",
+        "power": "even_more_origins:togglefly"
       }
     ]
   },

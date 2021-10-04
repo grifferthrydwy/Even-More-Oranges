@@ -1,7 +1,12 @@
 {
     "type": "origins:active_self",
     "entity_action": {
-      "type": "even_more_origins:chorus"
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:speed",
+        "amplifier": 1,
+        "duration": 200
+      }
     },
     "cooldown": 500,
     "hud_render": {
@@ -13,5 +18,5 @@
       "continuous": true
     },
     "name": "Time Warp",
-    "description": "You slow down time enough to dodge an attack and easily get to safety"
+    "description": "You slow down time, and therefore speed up"
   }

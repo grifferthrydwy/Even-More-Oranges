@@ -1,6 +1,7 @@
 {
   "powers": [
     "even_more_origins:fly_daylight",
+    "even_more_origins:togglefly",
     "even_more_origins:extra_life",
     "even_more_origins:perma_glow",
     "origins:light_armor",

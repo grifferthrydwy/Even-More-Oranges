@@ -1,14 +1,16 @@
 {
 	"powers": [
 		"even_more_origins:fire_imune",
-		"origins:warper_chorus",
+		"even_more_origins:warper_chorus",
+		"even_more_origins:more_hunger",
 		"even_more_origins:nether_spawn",
 		"even_more_origins:water_kinda_slow",
-		"even_more_origins:mushroom_stick_monching"
+		"even_more_origins:warped_consume",
+		"even_more_origins:cant_swim"
 	],
 	"icon": "minecraft:warped_fungus",
 	"order": 10,
 	"impact": 3,
 	"name": "Warper",
-	"description": "One time you ate a sugon shroom and you've never been the same since"
+	"description": "One time you ate some nether shrooms and you've never been the same since"
 }

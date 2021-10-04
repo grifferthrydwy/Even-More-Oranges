@@ -3,7 +3,7 @@
     "entity_action": {
       "type": "even_more_origins:chorus"
     },
-    "cooldown": 10,
+    "cooldown": 40,
     "hud_render": {
       "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
       "bar_index": 17
