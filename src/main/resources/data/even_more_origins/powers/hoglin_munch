@@ -1,0 +1,30 @@
+{
+  "type": "origins:action_on_item_use",
+  "item_action": {
+    "type": "origins:consume",
+    "amount": 1
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:feed",
+        "food": 1.0,
+        "saturation": 1.0
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:haste",
+          "amplifier": 1,
+          "duration": 200
+        }
+      }
+    ]
+  },
+  "item_condition": {
+    "type": "minecraft:crimson_fungus"
+  },
+   "name": "Hoglin Stomach",
+   "description": "You quite enjoy crimson mushrooms, and they give you a nice buff when you eat one."
+},
