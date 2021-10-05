@@ -1,0 +1,43 @@
+{
+  "type": "origins:action_over_time",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:feed",
+        "food": 4,
+        "saturation": 2
+      },
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:haste",
+          "amplifier": 1,
+          "duration": 200
+        }
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "kill @e[type=item,limit=1,distance=0..1,nbt={Item:{id:\"minecraft:crimson_fungus\",Count:1b}}]"
+      }
+    ]
+  },
+  "interval": 5,
+  "condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:food_level",
+        "comparison": "<=",
+        "compare_to": 19
+      },
+      {
+        "type": "origins:command",
+        "command": "execute if entity @e[type=item,distance=..1,nbt={Item:{id:\"minecraft:crimson_fungus\",Count:1b}}]",
+        "comparison": "==",
+        "compare_to": 1
+      }
+    ]
+  },
+  "hidden":true
+}
