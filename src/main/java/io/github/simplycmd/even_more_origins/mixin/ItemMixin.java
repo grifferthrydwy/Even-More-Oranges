@@ -10,31 +10,19 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Item.class)
 public class ItemMixin {
-    /**
-     * @author SimplyCmd
-     * @reason Eating sugar
-     */
-    @Overwrite
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+    @Inject(at = @At("HEAD"), method = "use", cancellable = true)
+    public void use(World world, PlayerEntity user, Hand hand, CallbackInfoReturnable<TypedActionResult<ItemStack>> cir) {
         ItemStack itemStack = user.getStackInHand(hand);
         if (itemStack.getItem() == Items.SUGAR && user.getHungerManager().isNotFull() && PowerHolderComponent.hasPower(user, SugarInhalePower.class)) {
             itemStack.decrement(1);
             user.getHungerManager().add(1, 1);
-            return TypedActionResult.consume(itemStack);
-        }
-        if (((Item) (Object) this).isFood()) {
-            if (user.canConsume(((Item) (Object) this).getFoodComponent().isAlwaysEdible())) {
-                user.setCurrentHand(hand);
-                return TypedActionResult.consume(itemStack);
-            } else {
-                return TypedActionResult.fail(itemStack);
-            }
-        } else {
-            return TypedActionResult.pass(user.getStackInHand(hand));
+            cir.setReturnValue(TypedActionResult.consume(itemStack));
         }
     }
 }

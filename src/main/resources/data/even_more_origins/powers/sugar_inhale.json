@@ -1,4 +1,5 @@
 {
   "type": "even_more_origins:sugar_inhale",
-  "hidden": true
+  "name":"Not Drugs",
+  "description":"You can eat pure sugar"
 }

@@ -34,8 +34,6 @@
     "continuous": true
   },
 
-    "name":"Go my clidren!",
-	"description":"Summon a bunch of snowmen to help you in a fight"
-
-
+  "name":"Go my children!",
+  "description":"Summon a bunch of snowmen to help you in a fight"
 }

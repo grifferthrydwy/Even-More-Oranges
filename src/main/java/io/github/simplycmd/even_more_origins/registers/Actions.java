@@ -34,6 +34,11 @@ public class Actions {
     private static final Random RANDOM = new Random();
 
     public static void init() {
+        register(new ActionFactory<>(new Identifier(Main.MOD_ID, "become_geist"), new SerializableData(),
+                (data, entity) -> {
+                    ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 600, 0, false, false, false));
+                })
+        );
         register(new ActionFactory<>(new Identifier(Main.MOD_ID, "become_bat"), new SerializableData(),
                 (data, entity) -> {
                     BatEntity batEntity = new BatEntity(EntityType.BAT, entity.world);
@@ -44,9 +49,9 @@ public class Actions {
                     ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.HEALTH_BOOST, 600, -4, false, false, false));
                 })
         );
-        register(new ActionFactory<>(new Identifier(Main.MOD_ID, "become_geist"), new SerializableData(),
+        register(new ActionFactory<>(new Identifier(Main.MOD_ID, "ram"), new SerializableData(),
                 (data, entity) -> {
-                    ((PlayerEntity)entity).addStatusEffect(new StatusEffectInstance(StatusEffects.LUCK, 600, 0, false, false, false));
+                    Main.ramTicks.replace(entity.getUuid(), 20);
                 })
         );
         register(new ActionFactory<>(new Identifier(Main.MOD_ID, "flip"), new SerializableData(),

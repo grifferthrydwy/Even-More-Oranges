@@ -1,16 +1,30 @@
 {
-  "type": "origins:action_over_time",
+  "type": "origins:active_self",
   "entity_action": {
-    "type": "origins:execute_command",
-    "command": "scale set pehkui:base 1",
-    "permission_level": 4
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "even_more_origins:lorge_toggle"
+    },
+    "if_action": {
+      "type": "origins:execute_command",
+      "command": "scale set pehkui:base 3",
+      "permission_level": 4
+    },
+    "else_action": {
+      "type": "origins:execute_command",
+      "command": "scale set pehkui:base 1",
+      "permission_level": 4
+    }
   },
-  "interval": 2,
-  "condition": {
-    "type": "origins:power_active",
-    "power": "even_more_origins:lorge_toggle"
+  "cooldown": 20,
+  "hud_render": {
+    "should_render": false
   },
-
-   "name":"Lardex, Destroyer of Buffets",
-   "description":"YOU GET BIGGER, GALAXY SIZED"
+  "key": {
+    "key": "key.origins.secondary_active",
+    "continuous": false
+  },
+  "name":"Lardex, Destroyer of Buffets",
+  "description":"YOU GET BIGGER, GALAXY SIZED"
 }

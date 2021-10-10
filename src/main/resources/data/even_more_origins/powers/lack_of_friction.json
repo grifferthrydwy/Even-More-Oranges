@@ -8,7 +8,7 @@
       "amplifier": 2
     }
   },
-  "interval": 20,
+  "interval": 5,
   "condition": {
     "type": "origins:or",
     "conditions": [
@@ -58,5 +58,7 @@
         }
       }
     ]
-  }
+  },
+  "name":"Slippery Bottom",
+  "description":"That's a nice ass you got there... too bad it can't get any friction on loose blocks."
 }

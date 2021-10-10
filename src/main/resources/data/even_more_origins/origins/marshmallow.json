@@ -10,13 +10,12 @@
     "even_more_origins:slightly_big",
     "even_more_origins:lorge_toggle",
     "even_more_origins:lorge",
-    "even_more_origins:lorge_normal",
-    "even_more_origins:lack_of_friction",
-    "origins:claustrophobia"
+    "even_more_origins:hungry",
+    "even_more_origins:lack_of_friction"
   ],
   "icon": "snow_block",
   "order": 5,
   "impact": 2,
   "name": "Marshmallow",
-  "description":"Basically  diabetes"
+  "description":"Basically diabetes"
 }

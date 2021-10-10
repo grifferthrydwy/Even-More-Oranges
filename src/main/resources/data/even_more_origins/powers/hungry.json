@@ -1,0 +1,13 @@
+{
+  "type": "origins:modify_exhaustion",
+  "modifier": {
+    "name": "Massive boi need food",
+    "value": 20,
+    "operation": "multiply_base"
+  },
+  "condition": {
+    "type": "origins:power_active",
+    "power": "even_more_origins:lorge_toggle"
+  },
+  "hidden": true
+}

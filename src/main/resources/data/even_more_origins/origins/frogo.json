@@ -6,7 +6,8 @@
 		"even_more_origins:weak_against_mobs",
 		"even_more_origins:froggy_health",
 		"even_more_origins:pounce",
-		"even_more_origins:0.65_scale"
+		"even_more_origins:0.65_scale",
+		"even_more_origins:more_exhaust"
 	],
 	"icon": "minecraft:lime_dye",
 	"order": 1,

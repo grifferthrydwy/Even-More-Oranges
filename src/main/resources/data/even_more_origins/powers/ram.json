@@ -9,9 +9,8 @@
         "permission_level": 4
       },
       {
-        "type": "origins:execute_command",
-        "command": "playsound minecraft:entity.goat.ambient @a[distance=10] ~ ~ ~ 1 1 1",
-        "permission_level": 4
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.goat.screaming.prepare_ram"
       },
       {
         "type": "origins:add_velocity",
@@ -19,14 +18,19 @@
         "space": "local"
       },
       {
-        "type": "origins:add_velocity",
-        "y": 0
+        "type": "origins:exhaust",
+        "amount": 2
       },
       {
-        "type": "origins:exhaust",
-        "amount": 0.6
+        "type": "even_more_origins:ram"
       }
     ]
+  },
+  "condition": {
+    "type": "origins:block_collision",
+    "offset_x": 0.0,
+    "offset_z": 0.0,
+    "offset_y": -0.3
   },
   "key": {
     "key": "key.origins.primary_active",
@@ -39,6 +43,6 @@
     "bar_index": 9
   },
 
-  "name": "Ram[Primary]",
+  "name": "Ram [Primary]",
   "description": "You perform a ram towards the direction you're facing."
 }
