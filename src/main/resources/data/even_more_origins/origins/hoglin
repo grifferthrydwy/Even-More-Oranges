@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"even_more_origins:fire_imune",
+		"even_more_origins:more_hunger",
+		"even_more_origins:nether_spawn",
+		"even_more_origins:water_kinda_slow",
+		"even_more_origins:hoglinmunchthatshouldwork",
+    "even_more_origins:slightlylesskb",
+		"even_more_origins:cant_swim"
+	],
+	"icon": "minecraft:crimson_fungus",
+	"order": 10,
+	"impact": 3,
+	"name": "Hoglin",
+	"description": "You are a nether pig that feasts on fungi."
