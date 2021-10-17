@@ -1,0 +1,17 @@
+{
+	"powers": [
+		"even_more_origins:phoenixwings",
+		"even_more_origins:phoenixfly",
+		"even_more_origins:nokineticdmg",
+		"even_more_origins:no_falldmg",
+		"even_more_origins:phoenixhealth",
+		"even_more_origins:phoenixcooldown",
+		"even_more_origins:phoenixrebirth",
+		"even_more_origins:fire_imune",
+		"even_more_origins:more_exhaustion"
+	],
+	"icon": "minecraft:fire_charge",
+	"order": 11,
+	"impact": 1,
+	"name": "Phoenix"
+}

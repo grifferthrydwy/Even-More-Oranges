@@ -1,0 +1,13 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:add_velocity",
+        "z": 50,
+        "space":"local",
+        "set": true
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:fall_flying"
+    }
+}
