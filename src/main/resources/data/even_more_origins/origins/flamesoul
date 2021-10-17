@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"even_more_origins:fire_imune",
+		"even_more_origins:fire_imune",
+		"even_more_origins:fire_imune",
+		"even_more_origins:nether_spawn",
+		"even_more_origins:fire_imune",
+		"even_more_origins:fire_imune",
+		"even_more_origins:fire_imune"
+	],
+	"icon": "minecraft:fire_charge",
+	"order": 10,
+	"impact": 3,
+	"name": "Flamesoul",
+	"description": "You can force your soul to ignite."
+}
