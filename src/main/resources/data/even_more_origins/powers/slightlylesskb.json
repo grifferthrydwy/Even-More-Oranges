@@ -1,0 +1,13 @@
+{
+  "type": "origins:attribute",
+  "modifier": {
+    "name": "Sturdy",
+	"description":"You take slightly less knockback",
+    "attribute": "minecraft:generic.knockback_resistance",
+    "value": 0.6,
+    "operation": "addition"
+  },
+
+  "name":"Sturdy",
+  "description":"You take slightly less knockback"
+}
